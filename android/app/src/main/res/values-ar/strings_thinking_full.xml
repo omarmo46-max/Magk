@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="thinking_show_full">عرض التفكير كاملًا</string>
+    <string name="thinking_full_title">التفكير الكامل</string>
+    <string name="thinking_full_char_count">%1$s حرف</string>
+    <string name="thinking_full_load_more">تحميل المزيد</string>
+    <string name="thinking_full_copy_failed">طويل جدًا للنسخ</string>
+</resources>

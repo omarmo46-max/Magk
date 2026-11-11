@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="usage_range_today">اليوم</string>
+    <string name="usage_range_7d">7 أيام</string>
+    <string name="usage_range_30d">30 يومًا</string>
+    <string name="usage_range_all">الكل</string>
+    <string name="usage_range_caption_fmt">%1$s · التوقيت المحلي</string>
+    <string name="usage_total_tokens">إجمالي الرموز (بما في ذلك الذاكرة المؤقتة)</string>
+    <string name="usage_non_cached_fmt">بدون قراءات الذاكرة المؤقتة %1$s</string>
+    <string name="usage_daily_avg_fmt">المتوسط اليومي %1$s</string>
+    <string name="usage_active_days_fmt">نشط %1$d/%2$d يومًا</string>
+    <string name="usage_seg_input">المدخلات</string>
+    <string name="usage_seg_cache_write">كتابة الذاكرة المؤقتة</string>
+    <string name="usage_seg_cache_read">قراءة الذاكرة المؤقتة</string>
+    <string name="usage_seg_output">المخرجات</string>
+    <string name="usage_cache_hit">معدل إصابة الذاكرة المؤقتة</string>
+    <string name="usage_cache_basis_fmt">بناءً على %1$s من المدخلات</string>
+    <string name="usage_trend">الاتجاه</string>
+    <string name="usage_trend_peak_fmt">الذروة %1$s</string>
+    <string name="usage_today_short">اليوم</string>
+    <string name="usage_a11y_chart_fmt">مخطط الاستخدام. الإجمالي %1$s رمز، والأعلى %2$s في %3$s</string>
+    <string name="usage_dim_provider">المزودون</string>
+    <string name="usage_dim_model">النماذج</string>
+    <string name="usage_merge_models">دمج النموذج نفسه</string>
+    <plurals name="usage_n_models">
+        <item quantity="zero">%1$d نموذج</item>
+        <item quantity="one">نموذج واحد</item>
+        <item quantity="two">نموذجان</item>
+        <item quantity="few">%1$d نماذج</item>
+        <item quantity="many">%1$d نموذجًا</item>
+        <item quantity="other">%1$d نموذجًا</item>
+    </plurals>
+    <plurals name="usage_n_providers">
+        <item quantity="zero">%1$d مزود</item>
+        <item quantity="one">مزود واحد</item>
+        <item quantity="two">مزودان</item>
+        <item quantity="few">%1$d مزودين</item>
+        <item quantity="many">%1$d مزودًا</item>
+        <item quantity="other">%1$d مزودًا</item>
+    </plurals>
+    <string name="usage_other_fmt">أخرى (%1$d)</string>
+    <string name="usage_removed_instances">النسخ المُزالة</string>
+    <string name="usage_instance_unknown">النسخة غير مسجَّلة</string>
+    <string name="usage_unknown_provider">غير معروف</string>
+    <string name="usage_unknown_model">نموذج غير معروف</string>
+    <string name="usage_raw_ids_fmt">المعرّفات الخام: %1$s</string>
+    <string name="usage_detail_fresh_input">مدخلات جديدة</string>
+    <string name="usage_empty_all">لا توجد بيانات استخدام بعد. يظهر استخدام الرموز هنا بعد أن تتحدث.</string>
+    <string name="usage_empty_range">لا يوجد استخدام في هذه الفترة</string>
+    <string name="usage_show_all">عرض كل الأوقات</string>
+    <string name="usage_error">تعذّرت قراءة الاستخدام</string>
+    <string name="usage_retry">إعادة المحاولة</string>
+    <string name="usage_note_retained">بناءً على المحادثات التي لا تزال لديك؛ لا تُحتسب المحادثات المحذوفة.</string>
+    <string name="usage_note_background">يستثني الاستدعاءات الخلفية مثل توليد العناوين وضغط السياق.</string>
+</resources>

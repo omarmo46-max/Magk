@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="retry_badge_a11y">جارٍ إعادة المحاولة، المحاولة %1$d من %2$d. اضغط لرؤية المحاولات.</string>
+    <string name="retry_sheet_title">إعادة المحاولة التلقائية</string>
+    <string name="retry_sheet_subtitle">الطلبات التي أُعيدت محاولتها أثناء هذه المهمة. تُمسح القائمة عند انتهاء الرد.</string>
+    <string name="retry_sheet_empty">لا توجد محاولات إعادة في هذه المهمة.</string>
+    <string name="retry_record_title">إعادة المحاولة %1$d من %2$d</string>
+    <string name="retry_record_error">الخطأ: %1$s</string>
+    <string name="retry_record_model">النموذج: %1$s</string>
+    <string name="retry_record_endpoint">نقطة النهاية: %1$s</string>
+    <string name="retry_record_delay">انتُظر %1$d ث قبل إعادة المحاولة</string>
+    <string name="retry_record_switched">نموذج مختلف عن إعادة المحاولة السابقة</string>
+</resources>

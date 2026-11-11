@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- [FIX: icon-auto-not-following-theme] Was #0A0A0C (same black as
+         the forced-dark/-light colors below) in BOTH this day file and
+         values-night/ic_launcher_background.xml — so "Auto" never
+         actually followed the device theme, always rendering black
+         regardless of light/dark system mode.
+
+         [FIX: icon-auto-should-reuse-light-dark-not-a-3rd-shade] First fix
+         restored this to #EFF2F6 — a distinct near-white, not quite the
+         same as the pinned "Light" icon's pure white background. That
+         left 2 light-ish shades (#EFF2F6 here vs #FFFFFF on Light) and,
+         on the night file, 2 dark-ish shades (#2C3034 vs #0A0A0C on
+         Dark) — four slightly different looks for what should only ever
+         be two: "Auto" is meant to just show the SAME Light icon or the
+         SAME Dark icon, picked automatically by device theme, not a
+         third/fourth intermediate tone. Aliased directly to
+         @color/ic_launcher_bg_force_light (defined once, in
+         ic_launcher_alt_colors.xml) so there is exactly one light color
+         in the whole project, reused by both. -->
+    <color name="ic_launcher_background">@color/ic_launcher_bg_force_light</color>
+</resources>

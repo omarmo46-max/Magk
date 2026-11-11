@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- [FIX: icon-auto-should-reuse-light-dark-not-a-3rd-shade]
+         @color/ic_launcher_background now aliases @color/ic_launcher_bg_
+         force_dark directly (see that color's own file), so this is
+         pixel-identical to the pinned "Dark" icon's background, not a
+         separate shade. -->
+    <background android:drawable="@color/ic_launcher_background" />
+    <!-- Points at the same ic_launcher_foreground_dark mipmap the pinned
+         "Dark" variant uses (mipmap-anydpi-v26/ic_launcher_classic_dark.xml)
+         instead of the differently-named @mipmap/ic_launcher_foreground —
+         both held byte-identical artwork already, but referencing the same
+         resource name makes that explicit rather than relying on two
+         separately-maintained copies happening to match. -->
+    <foreground>
+        <inset
+            android:drawable="@mipmap/ic_launcher_foreground_dark"
+            android:inset="15%" />
+    </foreground>
+    <!-- T-android-themed-icons: monochrome layer (see day variant). -->
+    <monochrome android:drawable="@drawable/ic_launcher_monochrome" />
+</adaptive-icon>

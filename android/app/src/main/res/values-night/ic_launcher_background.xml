@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- [FIX: icon-auto-not-following-theme] Was #0A0A0C, identical to
+         the day (non-night) file — see that file's comment.
+
+         [FIX: icon-auto-should-reuse-light-dark-not-a-3rd-shade] First fix
+         restored this to #2C3034, a dark-but-not-quite-black tone distinct
+         from the pinned "Dark" icon's #0A0A0C — see the day file's comment
+         for why that's wrong (Auto should reuse Light/Dark exactly, not
+         carry its own near-duplicate shades). Aliased directly to
+         @color/ic_launcher_bg_force_dark so Auto-at-night is pixel-
+         identical to the pinned Dark icon, not just similar. -->
+    <color name="ic_launcher_background">@color/ic_launcher_bg_force_dark</color>
+</resources>

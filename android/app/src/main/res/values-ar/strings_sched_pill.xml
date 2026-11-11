@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sched_pill_running">قيد التشغيل</string>
+    <string name="sched_pill_waiting">بالانتظار</string>
+    <string name="sched_pill_run_now">تشغيل الآن</string>
+    <string name="sched_pill_hide">إخفاء هذا العد التنازلي</string>
+    <string name="sched_pill_cancel_all">إلغاء كل المهام المجدولة</string>
+    <string name="sched_pill_cancel_all_title">إلغاء كل المهام المجدولة؟</string>
+    <string name="sched_pill_cancel_all_confirm">إلغاء الكل</string>
+    <string name="sched_pill_not_now">ليس الآن</string>
+    <string name="sched_pill_cancel_all_message">ستُلغى كل مهمة لا تزال مخططة في هذه المحادثة.</string>
+    <string name="sched_pill_a11y_title">مهمة مجدولة قادمة</string>
+    <string name="sched_pill_a11y_running">التشغيل قيد التقدم</string>
+    <string name="sched_pill_a11y_waiting">بانتظار انتهاء مهمة أخرى</string>
+    <string name="sched_pill_a11y_upcoming_left">تشغيل قادم · متبقٍ %1$d</string>
+    <string name="sched_pill_a11y_upcoming">تشغيل قادم</string>
+    <string name="sched_pill_a11y_run_of">التشغيل %1$d من %2$d</string>
+    <string name="sched_pill_a11y_run">التشغيل %1$d</string>
+    <string name="sched_pill_a11y_next_in">التشغيل التالي خلال %1$s</string>
+    <string name="sched_pill_a11y_more">+%1$d أخرى</string>
+    <string name="sched_pill_a11y_hint">يفتح تفاصيل المهمة</string>
+</resources>

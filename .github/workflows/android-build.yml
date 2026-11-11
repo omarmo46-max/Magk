@@ -1,0 +1,134 @@
+name: Android build
+
+# Builds the native rclone+tsnet library from deps/rclone-mobile (via
+# deps/build_rclone_android.sh + gomobile), drops the resulting rclone.aar
+# into android/app/libs/, then assembles the Magk.ai APK. This restores the
+# remote-backup-destinations and Tailscale/VPN features in full — see
+# README.md's "Building from source" section for the background and for how
+# to run the same steps on your own machine instead of in CI.
+#
+# NOTE: this workflow was written and reviewed by hand but has not been run
+# end-to-end (no Android NDK / Go toolchain / network access to the Go module
+# proxy were available in the environment that authored it). The steps below
+# follow each tool's own documented usage precisely, but if GitHub's runner
+# images change versions or paths, a small fix may be needed — check the
+# Actions log for the failing step first.
+
+on:
+  push:
+    branches: [main]
+    paths-ignore: ["docs/**", "README.md", ".github/workflows/pages.yml"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Set up Go (version pinned by deps/rclone-mobile/go.mod)
+        uses: actions/setup-go@v5
+        with:
+          go-version-file: deps/rclone-mobile/go.mod
+          cache-dependency-path: deps/rclone-mobile/go.sum
+
+      - name: Set up Android NDK
+        id: setup-ndk
+        uses: nttld/setup-ndk@v1
+        with:
+          ndk-version: r27c
+          add-to-path: false
+
+      - name: Install gomobile
+        shell: bash
+        run: |
+          go version 2>&1 | tee -a "$GITHUB_WORKSPACE/build.log"
+          go install golang.org/x/mobile/cmd/gomobile@v0.0.0-20260813181013-1960c775504c 2>&1 | tee -a "$GITHUB_WORKSPACE/build.log"
+          go install golang.org/x/mobile/cmd/gobind@v0.0.0-20260813181013-1960c775504c 2>&1 | tee -a "$GITHUB_WORKSPACE/build.log"
+          echo "$(go env GOPATH)/bin" >> "$GITHUB_PATH"
+
+      - name: gomobile init
+        run: gomobile init
+
+      - name: Build rclone.aar
+        env:
+          ANDROID_NDK_HOME: ${{ steps.setup-ndk.outputs.ndk-path }}
+        run: ./deps/build_rclone_android.sh
+
+      - name: Install rclone.aar into the app module
+        run: |
+          mkdir -p android/app/libs
+          cp deps/build/rclone/rclone.aar android/app/libs/rclone.aar
+
+      - name: Build libproot.so (PRoot for the Linux sandbox)
+        env:
+          ANDROID_NDK_HOME: ${{ steps.setup-ndk.outputs.ndk-path }}
+        shell: bash
+        run: |
+          set -o pipefail
+          ./deps/build_proot.sh 2>&1 | tee -a "$GITHUB_WORKSPACE/build.log"
+
+      - name: Build libmagk_offload.so (guest-side offload client)
+        env:
+          ANDROID_NDK_HOME: ${{ steps.setup-ndk.outputs.ndk-path }}
+        shell: bash
+        run: |
+          set -o pipefail
+          ./deps/build_offload_client.sh 2>&1 | tee -a "$GITHUB_WORKSPACE/build.log"
+
+      - name: Grant execute permission to gradlew
+        run: chmod +x android/gradlew
+
+      - name: Assemble debug APK
+        shell: bash
+        working-directory: android
+        run: ./gradlew :app:assembleDebug --stacktrace 2>&1 | tee -a "$GITHUB_WORKSPACE/build.log"
+
+      - name: Publish build errors (on failure)
+        if: failure()
+        shell: bash
+        run: |
+          set +e
+          mkdir -p /tmp/ci && cd /tmp/ci
+          { echo "run: $GITHUB_RUN_ID  sha: $GITHUB_SHA"; echo "== ERRORS =="; grep -nE "^e: |error:|FAILED|What went wrong|Execution failed|Could not|Unresolved|AAPT|aapt" "$GITHUB_WORKSPACE/build.log" | head -150; echo "== TAIL =="; tail -150 "$GITHUB_WORKSPACE/build.log"; } > errors.txt 2>&1
+          grep -E "^e: |What went wrong|error:" -A2 "$GITHUB_WORKSPACE/build.log" | head -20 | while read -r l; do echo "::error::$l"; done
+          git clone --quiet "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" repo
+          cd repo
+          git config user.name ci; git config user.email ci@example.com
+          git checkout -B build-logs
+          git rm -rq . 2>/dev/null
+          cp /tmp/ci/errors.txt errors.txt
+          cp "$GITHUB_WORKSPACE/build.log" full-build.log
+          git add errors.txt full-build.log
+          git commit -qm "build log for run $GITHUB_RUN_ID"
+          git push -f origin build-logs
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: magk-ai-debug-apk
+          path: android/app/build/outputs/apk/debug/*.apk
+          if-no-files-found: error
+
+      - name: Publish APK as a pre-release (tag 0-beta-build<N>, ignored by stable update channel)
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          APK="$(ls android/app/build/outputs/apk/debug/*.apk | head -1)"
+          cp "$APK" Magk.apk
+          gh release create "0-beta-build${{ github.run_number }}" Magk.apk \
+            --prerelease --target "${{ github.sha }}" \
+            --title "Magk build ${{ github.run_number }}" \
+            --notes "Debug APK built by CI from ${{ github.sha }}."

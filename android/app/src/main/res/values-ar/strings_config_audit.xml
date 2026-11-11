@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="config_audit_summary_header">ملخص التغييرات المعتمدة</string>
+    <string name="config_audit_detail_title">تفاصيل التغيير</string>
+    <string name="config_audit_detail_status">الحالة</string>
+    <string name="config_audit_detail_changed_by">غيّره</string>
+    <string name="config_audit_detail_requested">وقت الطلب</string>
+    <string name="config_audit_detail_resolved">وقت الحسم</string>
+    <string name="config_audit_detail_note">ملاحظة من المساعد</string>
+    <string name="config_audit_detail_what_changed">ما الذي تغيّر</string>
+    <string name="config_audit_detail_predates">هذا السجل أقدم من الأوصاف المقروءة، لذلك يُعرض التغيير الخام فقط.</string>
+    <string name="config_audit_detail_raw">التغيير الخام</string>
+    <string name="config_audit_detail_setting">الإعداد</string>
+    <string name="config_audit_detail_before">قبل</string>
+    <string name="config_audit_detail_after">بعد</string>
+    <string name="config_audit_detail_revert">التراجع عن هذا التغيير</string>
+    <string name="config_audit_detail_reverted">تم التراجع</string>
+    <string name="config_audit_revert_undoes">هذا يلغي:</string>
+    <string name="config_audit_actor_assistant">المساعد</string>
+    <string name="config_audit_actor_you">أنت</string>
+    <string name="config_audit_actor_assistant_revert">المساعد (تراجع)</string>
+    <string name="config_audit_actor_you_revert">أنت (تراجع)</string>
+</resources>

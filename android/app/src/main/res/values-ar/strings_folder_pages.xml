@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sessionlist_folder_show_more">عرض %1$d أخرى (متبقٍ %2$d)</string>
+</resources>

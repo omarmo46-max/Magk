@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool_fold_setting_title">طيّ استدعاءات الأدوات المتتالية</string>
+    <string name="tool_fold_section">استدعاءات الأدوات</string>
+    <string name="tool_fold_setting_footer">تُعرض استدعاءات الأدوات المتتالية في سطر واحد. اضغط عليه لرؤية كل استدعاء.</string>
+    <string name="tool_fold_ran_n_tools">تم تشغيل %1$d أدوات</string>
+    <string name="tool_fold_n_failed">فشل %1$d</string>
+    <string name="tool_fold_n_cancelled">أُلغي %1$d</string>
+    <string name="tool_fold_expand_hint">يعرض كل استدعاء أداة</string>
+    <string name="tool_fold_collapse_hint">يخفي استدعاءات الأدوات</string>
+</resources>

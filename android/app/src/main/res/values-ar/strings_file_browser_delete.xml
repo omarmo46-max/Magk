@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="filebrowser_delete_mount_point_refused">\"%1$s\" مجلد يربطه Magk هنا، لذلك لا يمكن حذفه من متصفح الملفات. لم يُحذف شيء. لإزالة مجلد خارجي، استخدم الإعدادات › ربط مجلدات خارجية.</string>
+</resources>

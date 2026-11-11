@@ -1,0 +1,4 @@
+#!/bin/sh
+# MagkApp URL interceptor — routes www-browser into the host-side
+# OpenOffloadHandler via magk-open. See magk-open for details.
+exec /usr/local/bin/magk-open "$@"

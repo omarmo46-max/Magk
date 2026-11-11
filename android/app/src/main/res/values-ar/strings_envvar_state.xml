@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="env_var_status_disabled">معطّل</string>
+    <string name="env_var_status_duplicate">اسم مكرر</string>
+    <string name="env_var_enabled_toggle">مفعّل</string>
+    <string name="env_var_enabled_footer">عند الإيقاف، يحتفظ المتغير بقيمته وملاحظته لكنه لا يُمرَّر إلى الصدفات أو الطرفيات أو خوادم MCP.</string>
+    <string name="env_var_disabled_highlight">هذا المتغير معطّل. فعّله لإتاحته مرة أخرى.</string>
+    <string name="env_var_action_disable">تعطيل</string>
+    <string name="env_var_action_enable">تفعيل</string>
+    <string name="mcp_form_env_disabled_warning">%1$s معطّل وسيُمرَّر كقيمة فارغة.</string>
+</resources>

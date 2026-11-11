@@ -1,0 +1,18 @@
+name: PRoot patches
+
+on:
+  push:
+    paths: ['deps/proot-patches/**', '.github/workflows/proot-patches.yml']
+  pull_request:
+    paths: ['deps/proot-patches/**', '.github/workflows/proot-patches.yml']
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install build dependencies
+        run: sudo apt-get update && sudo apt-get install -y gcc make git libtalloc-dev busybox-static golang-go
+      - name: Regression tests for --fake-netlink
+        run: ./deps/proot-patches/tests/run_tests.sh

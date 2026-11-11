@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="provider_detail_hidden_models_group">النماذج المخفية (%1$d)</string>
+    <string name="provider_detail_delete_api_model_confirm">حذف \"%1$s\"؟ إذا أدرجه المزود مرة أخرى، فقد يعيده تحديث قائمة النماذج.</string>
+</resources>

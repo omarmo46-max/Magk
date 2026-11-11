@@ -1,0 +1,4 @@
+#!/bin/sh
+# MagkApp URL interceptor — routes kde-open into the host-side
+# OpenOffloadHandler via magk-open. See magk-open for details.
+exec /usr/local/bin/magk-open "$@"

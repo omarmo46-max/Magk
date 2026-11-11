@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="config_confirm_title_one">تأكيد التغيير</string>
+    <string name="config_confirm_title_many">تأكيد %1$d تغييرات</string>
+    <string name="config_confirm_cancel">إلغاء</string>
+    <string name="config_confirm_apply">تطبيق</string>
+    <string name="config_confirm_reject_all">رفض الكل</string>
+    <string name="config_confirm_risk_destructive">قد يؤثر هذا على استدعاءات الأدوات اللاحقة.</string>
+    <string name="config_confirm_risk_sensitive">قابل للتراجع، لكنه يستحق نظرة سريعة.</string>
+</resources>

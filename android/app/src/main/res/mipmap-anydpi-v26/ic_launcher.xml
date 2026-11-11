@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- [FIX: icon-auto-should-reuse-light-dark-not-a-3rd-shade]
+         @color/ic_launcher_background aliases @color/ic_launcher_bg_
+         force_light directly, so this file (no -night qualifier — what
+         Android resolves in light/day system mode) is pixel-identical to
+         the pinned "Light" icon's background, not a separate shade. -->
+    <background android:drawable="@color/ic_launcher_background" />
+    <!-- [FIX: icon-light-glyph-contrast] @mipmap/ic_launcher_foreground
+         draws the light-gray glyph meant for a DARK background, so
+         pairing it with this now-light background would leave the "M"
+         nearly invisible — the same contrast bug just fixed on the
+         forced "Light" variant. Uses the same ic_launcher_foreground_
+         dark_ink the pinned "Light" icon uses: a pixel-for-pixel dark
+         recolor of the real artwork (see ic_launcher_classic_light.xml's
+         comment), so the drip + web-pattern detail matches Dark/Auto-
+         night exactly, just in ink instead of light gray. The night-
+         qualified sibling (mipmap-night-anydpi-v26/ic_launcher.xml) is
+         untouched: its background/foreground now alias the pinned "Dark"
+         icon's exactly, which was already correct contrast. -->
+    <foreground>
+        <inset
+            android:drawable="@mipmap/ic_launcher_foreground_dark_ink"
+            android:inset="15%" />
+    </foreground>
+    <!-- T-android-themed-icons: monochrome layer for Android 13+ Themed
+         Icons. Same silhouette shared by all 3 activity-alias adaptive
+         icons (auto / classic_light / classic_dark) — Themed Icons
+         re-tints from one shape regardless of which alias is active. -->
+    <monochrome android:drawable="@drawable/ic_launcher_monochrome" />
+</adaptive-icon>
