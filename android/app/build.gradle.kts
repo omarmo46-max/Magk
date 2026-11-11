@@ -491,7 +491,7 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.9.0")
     testImplementation("com.squareup.okhttp3:mockwebserver:4.12.0")
-    testImplementation("org.json:json:20231013")
+    testImplementation("org.json:json:20260814")
     // [T-android-search-visible-only] Runs the session-search SQL (SQLite JSON functions)
     // against a real SQLite in JVM tests; the same driver Room's compiler already uses.
     testImplementation("org.xerial:sqlite-jdbc:3.41.2.2")
