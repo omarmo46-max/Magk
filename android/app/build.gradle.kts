@@ -466,7 +466,7 @@ dependencies {
     // T283: ACRA — local crash report capture. acra-core only (no http
     // sender, no network permission). CrashFileSender writes reports to
     // filesDir/logs/ where LogManagementScreen surfaces them.
-    implementation("ch.acra:acra-core:5.12.0")
+    implementation("ch.acra:acra-core:5.14.2")
 
     // T322: Shizuku SDK — offloads privileged Android system APIs (PackageManager,
     // PermissionManager, ActivityManager, AppOps, IInputManager, …) through a
