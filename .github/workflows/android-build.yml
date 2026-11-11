@@ -38,7 +38,7 @@ jobs:
           java-version: "17"
 
       - name: Set up Go (version pinned by deps/rclone-mobile/go.mod)
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v7
         with:
           go-version-file: deps/rclone-mobile/go.mod
           cache-dependency-path: deps/rclone-mobile/go.sum
