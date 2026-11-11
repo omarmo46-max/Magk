@@ -592,6 +592,48 @@ static void do_recv(Tracee *tracee, FakeSock *s, int is_msg)
 	voided(tracee, (flags & MSG_TRUNC) && truncated ? (long) full : (long) used);
 }
 
+/*
+ * Create the FIFO that stands in for the netlink socket. PROOT_TMP_DIR is
+ * tried first (the app points it at its private directory), then TMPDIR,
+ * /tmp and /data/local/tmp; the directory that worked is remembered. When
+ * none works the real syscall runs unchanged (Android then refuses it as
+ * before) and one warning explains why.
+ */
+static int make_fifo(Tracee *tracee, Pending *slot)
+{
+	static const char *cached;
+	static int warned;
+	const char *cands[5] = { cached, getenv("PROOT_TMP_DIR"), getenv("TMPDIR"), "/tmp", "/data/local/tmp" };
+	int last_errno = 0;
+
+	for (int i = 0; i < 5; i++) {
+		const char *dir = cands[i];
+		if (!dir || !*dir)
+			continue;
+		snprintf(slot->path, sizeof slot->path, "%s/.magk-nl-%d-%lu", dir, (int) getpid(), ++fifo_counter);
+		unlink(slot->path);
+		if (mkfifo(slot->path, 0600) < 0) {
+			last_errno = errno;
+			continue;
+		}
+		slot->fd = open(slot->path, O_RDWR | O_NONBLOCK | O_CLOEXEC);
+		if (slot->fd < 0) {
+			last_errno = errno;
+			unlink(slot->path);
+			continue;
+		}
+		cached = dir;
+		return 0;
+	}
+	if (!warned) {
+		warned = 1;
+		note(tracee, WARNING, USER,
+		     "[fake_netlink] cannot create a FIFO in PROOT_TMP_DIR, TMPDIR, /tmp or /data/local/tmp (%s): "
+		     "network interface listing will fail", strerror(last_errno ? last_errno : EACCES));
+	}
+	return -1;
+}
+
 static void do_socket(Tracee *tracee)
 {
 	word_t type = peek_reg(tracee, ORIGINAL, SYSARG_2);
@@ -602,17 +644,8 @@ static void do_socket(Tracee *tracee)
 	if (!slot)
 		return;   /* let the kernel refuse as usual */
 
-	const char *dir = getenv("PROOT_TMP_DIR");
-	snprintf(slot->path, sizeof slot->path, "%s/.magk-nl-%d-%lu",
-		 dir && *dir ? dir : "/tmp", (int) getpid(), ++fifo_counter);
-	unlink(slot->path);
-	if (mkfifo(slot->path, 0600) < 0)
+	if (make_fifo(tracee, slot) < 0)
 		return;
-	slot->fd = open(slot->path, O_RDWR | O_NONBLOCK | O_CLOEXEC);
-	if (slot->fd < 0) {
-		unlink(slot->path);
-		return;
-	}
 	slot->pid = tracee->pid;
 	slot->in_use = 1;
 

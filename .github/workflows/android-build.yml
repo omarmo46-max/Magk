@@ -79,12 +79,11 @@ jobs:
           set -o pipefail
           ./deps/build_proot.sh 2>&1 | tee -a "$GITHUB_WORKSPACE/build.log"
 
-      - name: Build libmagk_offload.so (guest-side offload client)
-        env:
-          ANDROID_NDK_HOME: ${{ steps.setup-ndk.outputs.ndk-path }}
+      - name: Build libmagk_offload.so (guest-side offload client, static musl via zig)
         shell: bash
         run: |
           set -o pipefail
+          pip install ziglang 2>&1 | tail -1
           ./deps/build_offload_client.sh 2>&1 | tee -a "$GITHUB_WORKSPACE/build.log"
 
       - name: Grant execute permission to gradlew

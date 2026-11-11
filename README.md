@@ -69,7 +69,7 @@ cp deps/build/rclone/rclone.aar android/app/libs/
 # 1b. Build PRoot (the Linux sandbox's user-space chroot) into jniLibs:
 ANDROID_NDK_HOME=/path/to/ndk ./deps/build_proot.sh
 #     (applies deps/proot-patches: --fake-netlink; regression test: deps/proot-patches/tests/run_tests.sh)
-ANDROID_NDK_HOME=/path/to/ndk ./deps/build_offload_client.sh   # guest client for the magk-* tools
+pip install ziglang && ./deps/build_offload_client.sh       # guest client for the magk-* tools (static musl)
 #     (the Alpine rootfs is downloaded + checksum-verified by Gradle itself
 #      via the fetchAlpineRootfs task, so there is nothing to do for it)
 
@@ -100,6 +100,7 @@ deps/
   build_proot.sh                      Builds PRoot (+ our patches) into jniLibs/libproot.so
   proot-patches/                      PRoot extensions: --fake-netlink (rtnetlink answered in PRoot)
     tests/run_tests.sh                Regression test for the patches (runs on any x86_64 Linux box)
+    tests/rootfs_smoke.sh             Boots the real Alpine aarch64 rootfs (qemu-user) and checks shell, network, tools
   magk-offload-client.c               Guest-side client that lets magk-* tools run with any PRoot
   build_offload_client.sh             Builds it into jniLibs/libmagk_offload.so
   rclone-mobile/                      Go source for the rclone + Tailscale/tsnet gomobile library
@@ -147,6 +148,17 @@ Magk.ai stands on a good deal of open-source work, including:
   **[Shizuku](https://github.com/RikkaApps/Shizuku-API)** (MIT).
 - **[cppjieba](https://github.com/yanyiwu/cppjieba)** (MIT) and
   **[KaTeX](https://katex.org)** (MIT).
+
+---
+
+## Troubleshooting the sandbox
+
+Inside the sandbox shell run **`magk-doctor`** (add `--net` to also test internet access). It checks
+the Alpine rootfs, the filesystem, `apk`, network-interface listing and the `magk-*` tool service, and
+prints PASS/FAIL with a hint for each failure — paste its output when reporting a problem.
+
+CI runs the same checks on the real Alpine aarch64 rootfs
+(`deps/proot-patches/tests/rootfs_smoke.sh`, via qemu-user) on every change to the sandbox code.
 
 ---
 

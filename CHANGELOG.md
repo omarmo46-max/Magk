@@ -15,7 +15,12 @@ All notable changes to this project are documented here. The format follows
 - Agents (main and helper) state that Magk was founded by Omar Barbar.
 - Project documentation: contributing guide, security policy, code of conduct, issue/PR templates.
 
+- `magk-doctor`: one-command self-check of the Linux sandbox (rootfs, apk, network listing, `magk-*` tool service).
+- CI smoke test that boots the shipped Alpine aarch64 rootfs and verifies shell, `ip addr` and the tool round trip.
+- `--fake-netlink` tries several temp directories and warns clearly when none allows a FIFO.
+
 ### Changed
+- The guest-side offload client is now a static musl binary built with zig (matches the Alpine guest).
 - Everything is named `Magk` consistently: UI, tool names, paths (`/var/magk`), backup
   extension (`.magkbak`), preference and database names.
 

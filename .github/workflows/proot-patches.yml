@@ -2,17 +2,39 @@ name: PRoot patches
 
 on:
   push:
-    paths: ['deps/proot-patches/**', '.github/workflows/proot-patches.yml']
+    paths:
+      - 'deps/proot-patches/**'
+      - 'deps/magk-offload-client.c'
+      - 'android/app/src/main/assets/default_mount/usr/local/bin/magk-doctor'
+      - '.github/workflows/proot-patches.yml'
   pull_request:
-    paths: ['deps/proot-patches/**', '.github/workflows/proot-patches.yml']
+    paths:
+      - 'deps/proot-patches/**'
+      - 'deps/magk-offload-client.c'
+      - 'android/app/src/main/assets/default_mount/usr/local/bin/magk-doctor'
+      - '.github/workflows/proot-patches.yml'
   workflow_dispatch:
 
 jobs:
-  test:
+  fake-netlink:
+    name: --fake-netlink regression tests
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: Install build dependencies
         run: sudo apt-get update && sudo apt-get install -y gcc make git libtalloc-dev busybox-static golang-go
-      - name: Regression tests for --fake-netlink
+      - name: Run tests
         run: ./deps/proot-patches/tests/run_tests.sh
+
+  alpine-smoke:
+    name: Alpine aarch64 sandbox smoke test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gcc make git libtalloc-dev qemu-user-static curl python3-pip
+          pip install ziglang
+      - name: Boot the shipped Alpine rootfs and check shell, network, tools
+        run: ./deps/proot-patches/tests/rootfs_smoke.sh
