@@ -392,7 +392,7 @@ dependencies {
     implementation("androidx.compose.ui:ui")
     // [T-android-jankdiag] ProfileVerifier (ART compile state in the jank log).
     // Already in the APK through Compose at this version; declared to compile against it.
-    implementation("androidx.profileinstaller:profileinstaller:1.4.0")
+    implementation("androidx.profileinstaller:profileinstaller:1.4.1")
     implementation("androidx.compose.ui:ui-tooling-preview")
     debugImplementation("androidx.compose.ui:ui-tooling")
 
