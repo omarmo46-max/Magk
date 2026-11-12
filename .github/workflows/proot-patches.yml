@@ -29,17 +29,26 @@ jobs:
   alpine-smoke:
     name: Alpine aarch64 sandbox smoke test
     runs-on: ubuntu-latest
+    env:
+      PIP_BREAK_SYSTEM_PACKAGES: "1"
     steps:
       - uses: actions/checkout@v4
       - name: Install system packages
+        shell: bash
         run: |
-          sudo apt-get update
-          sudo apt-get install -y gcc make git libtalloc-dev qemu-user-static curl
+          set -o pipefail
+          { sudo apt-get update && sudo apt-get install -y gcc make git libtalloc-dev qemu-user-static curl; } 2>&1 | tee -a "$RUNNER_TEMP/smoke.log"
       - name: Install zig (C cross-compiler used for the guest client)
-        env:
-          PIP_BREAK_SYSTEM_PACKAGES: "1"
-        run: python3 -m pip install ziglang
+        shell: bash
+        run: |
+          set -o pipefail
+          python3 -m pip install ziglang 2>&1 | tee -a "$RUNNER_TEMP/smoke.log"
       - name: Boot the shipped Alpine rootfs and check shell, network, tools
-        env:
-          PIP_BREAK_SYSTEM_PACKAGES: "1"
-        run: ./deps/proot-patches/tests/rootfs_smoke.sh
+        shell: bash
+        run: |
+          set -o pipefail
+          ./deps/proot-patches/tests/rootfs_smoke.sh 2>&1 | tee -a "$RUNNER_TEMP/smoke.log"
+      - name: Show the last lines of the log as annotations (on failure)
+        if: failure()
+        shell: bash
+        run: tail -n 9 "$RUNNER_TEMP/smoke.log" | cut -c1-300 | while IFS= read -r l; do echo "::error::$l"; done
