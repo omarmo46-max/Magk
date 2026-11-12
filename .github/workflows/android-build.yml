@@ -121,7 +121,7 @@ jobs:
           if-no-files-found: error
 
       - name: Publish APK as a pre-release (tag 0-beta-build<N>, ignored by stable update channel)
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
