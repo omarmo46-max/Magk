@@ -17,7 +17,7 @@ name: Android build
 on:
   push:
     branches: [main]
-    paths-ignore: ["docs/**", "README.md", ".github/workflows/pages.yml"]
+    paths-ignore: ["docs/**", "README.md", ".github/workflows/pages.yml", ".github/workflows/proot-patches.yml", "deps/proot-patches/tests/**"]
   pull_request:
   workflow_dispatch:
 
@@ -83,7 +83,7 @@ jobs:
         shell: bash
         run: |
           set -o pipefail
-          pip install ziglang 2>&1 | tail -1
+          PIP_BREAK_SYSTEM_PACKAGES=1 python3 -m pip install ziglang 2>&1 | tail -1
           ./deps/build_offload_client.sh 2>&1 | tee -a "$GITHUB_WORKSPACE/build.log"
 
       - name: Grant execute permission to gradlew

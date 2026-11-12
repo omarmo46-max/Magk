@@ -31,10 +31,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Install dependencies
+      - name: Install system packages
         run: |
           sudo apt-get update
-          sudo apt-get install -y gcc make git libtalloc-dev qemu-user-static curl python3-pip
-          pip install ziglang
+          sudo apt-get install -y gcc make git libtalloc-dev qemu-user-static curl
+      - name: Install zig (C cross-compiler used for the guest client)
+        env:
+          PIP_BREAK_SYSTEM_PACKAGES: "1"
+        run: python3 -m pip install ziglang
       - name: Boot the shipped Alpine rootfs and check shell, network, tools
+        env:
+          PIP_BREAK_SYSTEM_PACKAGES: "1"
         run: ./deps/proot-patches/tests/rootfs_smoke.sh
