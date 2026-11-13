@@ -15,8 +15,8 @@ import kotlinx.coroutines.withTimeoutOrNull
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -1058,8 +1058,14 @@ fun MagkSelectionToolbarHost(
             Row(
                 modifier = Modifier
                     .clip(RoundedCornerShape(10.dp))
+                    // [T-android-toolbar-dynamic-height] The bar's height follows its
+                    // content (never less than 40dp). It used to be a fixed 40dp:
+                    // the labels need 20sp of line height plus 20dp of padding, so
+                    // as soon as the user's font size is larger than default - or
+                    // the script is taller, as with Arabic - the text no longer
+                    // fit and the Row's clip cut the bottom off every label.
                     .background(barColor)
-                    .height(40.dp)
+                    .heightIn(min = 40.dp)
                     .horizontalScroll(toolbarScroll),
                 verticalAlignment = Alignment.CenterVertically,
             ) {
@@ -1588,11 +1594,18 @@ internal fun inlineSelectionActionCount(
 
 @Composable
 private fun MagkToolbarDivider() {
+    // [T-android-toolbar-dynamic-height] The bar no longer has a fixed height,
+    // so the divider cannot fill it (fillMaxHeight would stretch to the whole
+    // popup window). It is sized from the label's own line height instead,
+    // which scales with the user's font size - at the default size this is the
+    // same 24dp the divider always had.
+    val density = androidx.compose.ui.platform.LocalDensity.current
+    val lineHeight = MaterialTheme.typography.labelLarge.lineHeight
+    val dividerHeight = (if (lineHeight.isSpecified) with(density) { lineHeight.toDp() } else 20.dp) + 4.dp
     Box(
         modifier = Modifier
-            .padding(vertical = 8.dp)
             .width(0.5.dp)
-            .fillMaxHeight()
+            .height(dividerHeight)
             .background(MaterialTheme.colorScheme.outlineVariant.copy(alpha = 0.4f)),
     )
 }

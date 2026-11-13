@@ -25,6 +25,7 @@ All notable changes to this project are documented here. The format follows
   extension (`.magkbak`), preference and database names.
 
 ### Fixed
+- Text-selection bar (Copy / Add to Chat Input / Copy Full Text / ...) cut the bottom off every label with a larger system font size or Arabic text: the bar now sizes itself to its content (minimum 40dp) instead of a fixed 40dp, and its dividers follow the label height.
 - JNI symbol names did not match the Kotlin package, which broke the native shell bridge.
 - The Linux shell could not start: missing rootfs and PRoot binaries, and PRoot rejecting
   options it does not know.

@@ -9,8 +9,8 @@ import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.rememberScrollState
-import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -344,8 +344,14 @@ internal fun MagkMarkdownTextToolbarHost(toolbar: MagkMarkdownTextToolbar) {
             Row(
                 modifier = Modifier
                     .clip(RoundedCornerShape(10.dp))
+                    // [T-android-toolbar-dynamic-height] The bar's height follows its
+                    // content (never less than 40dp). It used to be a fixed 40dp:
+                    // the labels need 20sp of line height plus 20dp of padding, so
+                    // as soon as the user's font size is larger than default - or
+                    // the script is taller, as with Arabic - the text no longer
+                    // fit and the Row's clip cut the bottom off every label.
                     .background(barColor)
-                    .height(40.dp)
+                    .heightIn(min = 40.dp)
                     .horizontalScroll(toolbarScroll),
                 verticalAlignment = Alignment.CenterVertically,
             ) {
@@ -468,9 +474,10 @@ internal fun MagkMarkdownTextToolbarHost(toolbar: MagkMarkdownTextToolbar) {
 
 @Composable
 private fun ToolbarButton(label: String, onClick: () -> Unit) {
-    // maxLines=1 + softWrap=false is load-bearing: the parent Row has a
-    // fixed height(40.dp), so any label that wraps to a second line
-    // shows only its first word on screen. Without this guard,
+    // maxLines=1 + softWrap=false is load-bearing: the bar's height is sized
+    // for a single line, so any label that wraps to a second line would make
+    // the bar jump in height (and previously showed only its first word,
+    // when the row was a fixed 40dp). Without this guard,
     // "Copy Rich Text" renders as just "Copy" — visually a duplicate of
     // the first toolbar item — and a longer "Add to input box" label collapses to "Add to".
     // See T-android-text-toolbar-dup-copy.
@@ -488,11 +495,16 @@ private fun ToolbarButton(label: String, onClick: () -> Unit) {
 
 @Composable
 private fun ToolbarDivider() {
+    // [T-android-toolbar-dynamic-height] Sized from the label's line height
+    // (scales with the user's font size) because the bar no longer has a fixed
+    // height to fill - same 24dp as before at the default font size.
+    val density = androidx.compose.ui.platform.LocalDensity.current
+    val lineHeight = MaterialTheme.typography.labelLarge.lineHeight
+    val dividerHeight = (if (lineHeight.isSpecified) with(density) { lineHeight.toDp() } else 20.dp) + 4.dp
     Box(
         modifier = Modifier
-            .padding(vertical = 8.dp)
             .width(0.5.dp)
-            .fillMaxHeight()
+            .height(dividerHeight)
             .background(MaterialTheme.colorScheme.outlineVariant.copy(alpha = 0.4f)),
     )
 }
