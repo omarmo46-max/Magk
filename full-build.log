@@ -1,0 +1,1277 @@
+go version go1.25.5 linux/amd64
+Setting top to                           : /home/runner/work/Magk/Magk/deps/build/proot/talloc-2.4.2 
+Setting out to                           : /home/runner/work/Magk/Magk/deps/build/proot/talloc-2.4.2/bin 
+Checking for 'gcc' (C compiler)          : not found 
+Checking for 'clang' (C compiler)        : /opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang 
+Checking for program 'git'               : /usr/bin/git 
+Checking for c flags '-MMD'              : yes 
+Checking for program 'gdb'               : not found 
+Checking for header sys/utsname.h        : yes 
+Checking uname sysname type              : Linux 
+Checking uname machine type              : dontcare 
+Checking uname release type              : dontcare 
+Checking uname version type              : dontcare 
+Checking for header stdio.h              : yes 
+Checking simple C program                : ok 
+Checking compiler accepts ['-Werror']    : yes 
+Checking linker accepts ['-Wl,-rpath,.'] : yes 
+Checking for rpath library support       : yes 
+Checking for -Wl,--version-script support : not found 
+Checking compiler accepts ['-fvisibility=hidden'] : yes 
+Checking for HAVE_VISIBILITY_ATTR                 : ok 
+Checking for library constructor support          : ok 
+Checking for library destructor support           : ok 
+Checking for __attribute__                        : ok 
+Checking compiler accepts ['-fPIC']               : yes 
+Checking for inline                               : inline 
+Checking for program 'pkg-config'                 : /usr/bin/pkg-config 
+Checking for pkg-config version >= '0.0.0'        : yes 
+Checking compiler accepts ['-D__STDC_WANT_LIB_EXT1__=1'] : yes 
+Checking compiler accepts ['']                           : yes 
+Checking for header sys/types.h                          : yes 
+Checking for header sys/stat.h                           : yes 
+Checking for header stdlib.h                             : yes 
+Checking for header stddef.h                             : yes 
+Checking for header memory.h                             : yes 
+Checking for header string.h                             : yes 
+Checking for header strings.h                            : yes 
+Checking for header inttypes.h                           : yes 
+Checking for header stdint.h                             : yes 
+Checking for header unistd.h                             : yes 
+Checking for header minix/config.h                       : no 
+Checking for header ctype.h                              : yes 
+Checking for header standards.h                          : no 
+Checking for header stdbool.h                            : yes 
+Checking for header stdarg.h                             : yes 
+Checking for header vararg.h                             : no 
+Checking for header limits.h                             : yes 
+Checking for header assert.h                             : yes 
+Checking getconf LFS_CFLAGS                              : not found 
+Checking getconf large file support flags work           : ok 
+Checking for large file support without additional flags : ok 
+Checking for header sys/time.h                           : yes 
+Checking for header time.h                               : yes 
+Checking for header endian.h                             : yes 
+Checking for header sys/endian.h                         : yes 
+Checking for HAVE_LITTLE_ENDIAN                          : ok 
+Checking for HAVE_BIG_ENDIAN                             : not found 
+Checking for header signal.h                             : yes 
+Checking if signal handlers return int                   : not found 
+Checking for variable __FUNCTION__                       : ok 
+Checking for va_copy                                     : ok 
+Checking for header linux/types.h                        : yes 
+Checking for header crypt.h                              : no 
+Checking for header locale.h                             : yes 
+Checking for header acl/libacl.h                         : no 
+Checking for header compat.h                             : no 
+Checking for header attr/xattr.h                         : no 
+Checking for header dustat.h                             : no 
+Checking for header fcntl.h                              : yes 
+Checking for header fnmatch.h                            : yes 
+Checking for header glob.h                               : yes 
+Checking for header history.h                            : no 
+Checking for header krb5.h                               : no 
+Checking for header langinfo.h                           : yes 
+Checking for header ndir.h                               : no 
+Checking for header pwd.h                                : yes 
+Checking for header shadow.h                             : no 
+Checking for header sys/acl.h                            : no 
+Checking for header sys/attributes.h                     : no 
+Checking for header attr/attributes.h                    : no 
+Checking for header sys/capability.h                     : yes 
+Checking for header sys/dir.h                            : no 
+Checking for header sys/epoll.h                          : yes 
+Checking for header sys/fcntl.h                          : yes 
+Checking for header sys/filio.h                          : no 
+Checking for header sys/filsys.h                         : no 
+Checking for header sys/fs/s5param.h                     : no 
+Checking for header sys/id.h                             : no 
+Checking for header sys/ioctl.h                          : yes 
+Checking for header sys/ipc.h                            : yes 
+Checking for header sys/mman.h                           : yes 
+Checking for header sys/mode.h                           : no 
+Checking for header sys/ndir.h                           : no 
+Checking for header sys/priv.h                           : no 
+Checking for header sys/resource.h                       : yes 
+Checking for header sys/security.h                       : no 
+Checking for header sys/shm.h                            : yes 
+Checking for header sys/statfs.h                         : yes 
+Checking for header sys/statvfs.h                        : yes 
+Checking for header sys/termio.h                         : no 
+Checking for header sys/vfs.h                            : yes 
+Checking for header sys/xattr.h                          : yes 
+Checking for header termio.h                             : yes 
+Checking for header termios.h                            : yes 
+Checking for header sys/file.h                           : yes 
+Checking for header sys/ucontext.h                       : yes 
+Checking for header sys/wait.h                           : yes 
+Checking for declaration of malloc                       : ok 
+Checking for header grp.h                                : yes 
+Checking for header sys/select.h                         : yes 
+Checking for header setjmp.h                             : yes 
+Checking for header utime.h                              : yes 
+Checking for header sys/syslog.h                         : yes 
+Checking for header syslog.h                             : yes 
+Checking for header sys/mount.h                          : yes 
+Checking for header mntent.h                             : yes 
+Checking for header stropts.h                            : no 
+Checking for header unix.h                               : no 
+Checking for header sys/param.h                          : yes 
+Checking for header sys/socket.h                         : yes 
+Checking for header netinet/in.h                         : yes 
+Checking for header netdb.h                              : yes 
+Checking for header arpa/inet.h                          : yes 
+Checking for header netinet/in_systm.h                   : yes 
+Checking for header netinet/ip.h                         : yes 
+Checking for header netinet/tcp.h                        : yes 
+Checking for header netinet/in_ip.h                      : no 
+Checking for header sys/sockio.h                         : no 
+Checking for header sys/un.h                             : yes 
+Checking for header sys/uio.h                            : yes 
+Checking for header ifaddrs.h                            : yes 
+Checking for header direct.h                             : no 
+Checking for header dirent.h                             : yes 
+Checking for header windows.h                            : no 
+Checking for header winsock2.h                           : no 
+Checking for header ws2tcpip.h                           : no 
+Checking for header errno.h                              : yes 
+Checking for header getopt.h                             : yes 
+Checking for header iconv.h                              : yes 
+Checking for header nss.h                                : no 
+Checking for header sasl/sasl.h                          : no 
+Checking for header linux/openat2.h                      : yes 
+Checking for inotify_init                                : ok 
+Checking for header security/pam_appl.h                  : no 
+Checking for header zlib.h                               : yes 
+Checking for header asm/unistd.h                         : yes 
+Checking for header sys/unistd.h                         : yes 
+Checking for header alloca.h                             : yes 
+Checking for header float.h                              : yes 
+Checking for header rpc/rpc.h                            : no 
+Checking for header rpc/nettype.h                        : no 
+Checking for tirpc rpc headers in default system path    : not found 
+Checking for libtirpc headers                            : not found 
+Checking for libntirpc headers                           : not found 
+No rpc/rpc.h header found, tirpc or libntirpc missing?
+Checking for header sys/sysctl.h                         : not found 
+Checking for header sys/fileio.h                         : no 
+Checking for header sys/filesys.h                        : no 
+Checking for header sys/dustat.h                         : no 
+Checking for header sys/sysmacros.h                      : yes 
+Checking for header xfs/libxfs.h                         : no 
+Checking for header netgroup.h                           : no 
+Checking for header valgrind.h                           : no 
+Checking for header valgrind/valgrind.h                  : no 
+Checking for header valgrind/memcheck.h                  : no 
+Checking for header valgrind/helgrind.h                  : no 
+Checking for header valgrind/callgrind.h                 : no 
+Checking for header nss_common.h                         : no 
+Checking for header nsswitch.h                           : no 
+Checking for header ns_api.h                             : no 
+Checking for header sys/extattr.h                        : no 
+Checking for header sys/ea.h                             : no 
+Checking for header sys/proplist.h                       : no 
+Checking for header sys/cdefs.h                          : yes 
+Checking for header utmp.h                               : yes 
+Checking for header utmpx.h                              : yes 
+Checking for header lastlog.h                            : yes 
+Checking for header syscall.h                            : yes 
+Checking for header sys/syscall.h                        : yes 
+Checking for header sys/atomic.h                         : no 
+Checking for header stdatomic.h                          : yes 
+Checking for header libgen.h                             : yes 
+Checking compiler accepts -Wno-format-truncation         : yes 
+Checking compiler accepts -Wno-unused-function           : yes 
+Checking compiler accepts -Wno-strict-overflow           : yes 
+Checking compiler accepts -Wno-unused-but-set-variable   : yes 
+Checking compiler accepts -Wuse-after-free=1             : no 
+Checking for header sys/prctl.h                          : yes 
+Checking for prctl syscall                               : ok 
+Checking for O_DIRECT flag to open(2)                    : ok 
+Checking for long long                                   : ok 
+Checking for intptr_t                                    : ok 
+Checking for uintptr_t                                   : ok 
+Checking for ptrdiff_t                                   : ok 
+Checking for comparison_fn_t                             : not found 
+Checking for bool                                        : ok 
+Checking for int8_t                                      : ok 
+Checking for uint8_t                                     : ok 
+Checking for int16_t                                     : ok 
+Checking for uint16_t                                    : ok 
+Checking for int32_t                                     : ok 
+Checking for uint32_t                                    : ok 
+Checking for int64_t                                     : ok 
+Checking for uint64_t                                    : ok 
+Checking for size_t                                      : ok 
+Checking for ssize_t                                     : ok 
+Checking for ino_t                                       : ok 
+Checking for loff_t                                      : ok 
+Checking for offset_t                                    : not found 
+Checking for volatile int                                : ok 
+Checking for uint_t                                      : ok 
+Checking for blksize_t                                   : ok 
+Checking for blkcnt_t                                    : ok 
+Checking if size of bool == 1                            : ok 
+Checking if size of char == 1                            : ok 
+Checking if size of int == 1                             : not found 
+Checking if size of int == 2                             : not found 
+Checking if size of int == 4                             : ok 
+Checking if size of long long == 1                       : not found 
+Checking if size of long long == 2                       : not found 
+Checking if size of long long == 4                       : not found 
+Checking if size of long long == 8                       : ok 
+Checking if size of long == 1                            : not found 
+Checking if size of long == 2                            : not found 
+Checking if size of long == 4                            : not found 
+Checking if size of long == 8                            : ok 
+Checking if size of short == 1                           : not found 
+Checking if size of short == 2                           : ok 
+Checking if size of size_t == 1                          : not found 
+Checking if size of size_t == 2                          : not found 
+Checking if size of size_t == 4                          : not found 
+Checking if size of size_t == 8                          : ok 
+Checking if size of ssize_t == 1                         : not found 
+Checking if size of ssize_t == 2                         : not found 
+Checking if size of ssize_t == 4                         : not found 
+Checking if size of ssize_t == 8                         : ok 
+Checking if size of int8_t == 1                          : ok 
+Checking if size of uint8_t == 1                         : ok 
+Checking if size of int16_t == 1                         : not found 
+Checking if size of int16_t == 2                         : ok 
+Checking if size of uint16_t == 1                        : not found 
+Checking if size of uint16_t == 2                        : ok 
+Checking if size of int32_t == 1                         : not found 
+Checking if size of int32_t == 2                         : not found 
+Checking if size of int32_t == 4                         : ok 
+Checking if size of uint32_t == 1                        : not found 
+Checking if size of uint32_t == 2                        : not found 
+Checking if size of uint32_t == 4                        : ok 
+Checking if size of int64_t == 1                         : not found 
+Checking if size of int64_t == 2                         : not found 
+Checking if size of int64_t == 4                         : not found 
+Checking if size of int64_t == 8                         : ok 
+Checking if size of uint64_t == 1                        : not found 
+Checking if size of uint64_t == 2                        : not found 
+Checking if size of uint64_t == 4                        : not found 
+Checking if size of uint64_t == 8                        : ok 
+Checking if size of void* == 1                           : not found 
+Checking if size of void* == 2                           : not found 
+Checking if size of void* == 4                           : not found 
+Checking if size of void* == 8                           : ok 
+Checking if size of off_t == 1                           : not found 
+Checking if size of off_t == 2                           : not found 
+Checking if size of off_t == 4                           : not found 
+Checking if size of off_t == 8                           : ok 
+Checking if size of dev_t == 1                           : not found 
+Checking if size of dev_t == 2                           : not found 
+Checking if size of dev_t == 4                           : not found 
+Checking if size of dev_t == 8                           : ok 
+Checking if size of ino_t == 1                           : not found 
+Checking if size of ino_t == 2                           : not found 
+Checking if size of ino_t == 4                           : not found 
+Checking if size of ino_t == 8                           : ok 
+Checking if size of time_t == 1                          : not found 
+Checking if size of time_t == 2                          : not found 
+Checking if size of time_t == 4                          : not found 
+Checking if size of time_t == 8                          : ok 
+Checking for socklen_t                                   : ok 
+Checking for struct ifaddrs                              : ok 
+Checking for struct addrinfo                             : ok 
+Checking for struct sockaddr                             : ok 
+Checking for HAVE_STRUCT_SOCKADDR_IN6                    : ok 
+Checking for struct sockaddr_storage                     : ok 
+Checking for sa_family_t                                 : ok 
+Checking for sig_atomic_t                                : ok 
+Checking for sigsetmask                                  : ok 
+Checking for siggetmask                                  : not found 
+Checking for sigprocmask                                 : ok 
+Checking for sigblock                                    : ok 
+Checking for sigaction                                   : ok 
+Checking for sigset                                      : ok 
+Checking for inet_ntoa                                   : ok 
+Checking for inet_aton                                   : ok 
+Checking for inet_ntop                                   : ok 
+Checking for inet_pton                                   : ok 
+Checking for connect                                     : ok 
+Checking for gethostbyname                               : ok 
+Checking for getaddrinfo                                 : ok 
+Checking for getnameinfo                                 : ok 
+Checking for freeaddrinfo                                : ok 
+Checking for gai_strerror                                : ok 
+Checking for socketpair                                  : ok 
+Checking for memset_s                                    : not found 
+Checking for memset_explicit                             : not found 
+Checking for volatile memory protection                  : ok 
+Checking for variable IPV6_V6ONLY                        : ok 
+Checking for header net/if.h                             : yes 
+Checking for HAVE_IPV6                                   : ok 
+Checking whether we have ucontext_t                      : ok 
+Checking for __sync_fetch_and_add compiler builtin       : ok 
+Checking for __sync_add_and_fetch compiler builtin       : ok 
+Checking for atomic_add_32 compiler builtin              : not found 
+Checking for __atomic_add_fetch compiler builtin         : ok 
+Checking for __atomic_load compiler builtin              : ok 
+Checking for atomic_thread_fence(memory_order_seq_cst) in stdatomic.h : ok 
+Checking for fallthrough attribute                                    : ok 
+Checking for strdup                                                   : ok 
+Checking for memmem                                                   : ok 
+Checking for printf                                                   : ok 
+Checking for memset                                                   : ok 
+Checking for memcpy                                                   : ok 
+Checking for memmove                                                  : ok 
+Checking for strcpy                                                   : ok 
+Checking for strncpy                                                  : ok 
+Checking for bzero                                                    : ok 
+Checking for shl_load                                                 : not found 
+Checking for shl_unload                                               : not found 
+Checking for shl_findsym                                              : not found 
+Checking for pipe                                                     : ok 
+Checking for strftime                                                 : ok 
+Checking for srandom                                                  : ok 
+Checking for random                                                   : ok 
+Checking for srand                                                    : ok 
+Checking for rand                                                     : ok 
+Checking for usleep                                                   : ok 
+Checking for setbuffer                                                : ok 
+Checking for lstat                                                    : ok 
+Checking for getpgrp                                                  : ok 
+Checking for utime                                                    : ok 
+Checking for utimes                                                   : ok 
+Checking for setuid                                                   : ok 
+Checking for seteuid                                                  : ok 
+Checking for setreuid                                                 : ok 
+Checking for setresuid                                                : ok 
+Checking for setgid                                                   : ok 
+Checking for setegid                                                  : ok 
+Checking for setregid                                                 : ok 
+Checking for setresgid                                                : ok 
+Checking for chroot                                                   : ok 
+Checking for strerror                                                 : ok 
+Checking for vsyslog                                                  : ok 
+Checking for setlinebuf                                               : ok 
+Checking for mktime                                                   : ok 
+Checking for ftruncate                                                : ok 
+Checking for chsize                                                   : not found 
+Checking for rename                                                   : ok 
+Checking for waitpid                                                  : ok 
+Checking for wait4                                                    : ok 
+Checking for initgroups                                               : ok 
+Checking for pread                                                    : ok 
+Checking for pwrite                                                   : ok 
+Checking for strndup                                                  : ok 
+Checking for strcasestr                                               : ok 
+Checking for strsep                                                   : ok 
+Checking for strtok_r                                                 : ok 
+Checking for mkdtemp                                                  : ok 
+Checking for dup2                                                     : ok 
+Checking for dprintf                                                  : ok 
+Checking for vdprintf                                                 : ok 
+Checking for isatty                                                   : ok 
+Checking for chown                                                    : ok 
+Checking for lchown                                                   : ok 
+Checking for link                                                     : ok 
+Checking for readlink                                                 : ok 
+Checking for symlink                                                  : ok 
+Checking for realpath                                                 : ok 
+Checking for snprintf                                                 : ok 
+Checking for vsnprintf                                                : ok 
+Checking for asprintf                                                 : ok 
+Checking for vasprintf                                                : ok 
+Checking for setenv                                                   : ok 
+Checking for unsetenv                                                 : ok 
+Checking for strnlen                                                  : ok 
+Checking for strtoull                                                 : ok 
+Checking for __strtoull                                               : not found 
+Checking for strtouq                                                  : not found 
+Checking for strtoll                                                  : ok 
+Checking for __strtoll                                                : not found 
+Checking for strtoq                                                   : not found 
+Checking for memalign                                                 : ok 
+Checking for posix_memalign                                           : ok 
+Checking for fmemopen                                                 : ok 
+Checking for header malloc.h                                          : yes 
+Checking for declaration of memalign                                  : ok 
+Checking for posix_fallocate-capable libc                             : ok 
+Checking for posix_fallocate                                          : ok 
+Checking for prctl                                                    : ok 
+Checking for dirname                                                  : ok 
+Checking for basename                                                 : ok 
+Checking for strlcpy                                                  : ok 
+Checking for strlcat                                                  : ok 
+Checking for getpeereid                                               : not found 
+Checking for library bsd                                              : no 
+Checking for getpeereid                                               : not found 
+Checking for library setproctitle                                     : no 
+Checking for setproctitle                                             : not found 
+Checking for library bsd                                              : no 
+Checking for setproctitle                                             : not found 
+Checking for setproctitle_init                                        : not found 
+Checking for library bsd                                              : no 
+Checking for setproctitle_init                                        : not found 
+Checking for closefrom                                                : not found 
+Checking for library bsd                                              : no 
+Checking for closefrom                                                : not found 
+Checking whether we can use SO_PEERCRED to get socket credentials     : ok 
+Checking correct behavior of strtoll                                  : ok 
+Checking for if_nameindex                                             : ok 
+Checking for if_nametoindex                                           : ok 
+Checking for strerror_r                                               : ok 
+Checking for syslog                                                   : ok 
+Checking for gai_strerror                                             : ok 
+Checking for get_current_dir_name                                     : not found 
+Checking for timegm                                                   : ok 
+Checking for getifaddrs                                               : ok 
+Checking for freeifaddrs                                              : ok 
+Checking for mmap                                                     : ok 
+Checking for setgroups                                                : ok 
+Checking for syscall                                                  : ok 
+Checking for setsid                                                   : ok 
+Checking for getgrent_r                                               : not found 
+Checking for getgrgid_r                                               : ok 
+Checking for getgrnam_r                                               : ok 
+Checking for getgrouplist                                             : ok 
+Checking for getpagesize                                              : ok 
+Checking for getpwent_r                                               : not found 
+Checking for getpwnam_r                                               : ok 
+Checking for getpwuid_r                                               : ok 
+Checking for epoll_create1                                            : ok 
+Checking for getprogname                                              : ok 
+Checking for copy_file_range                                          : not found 
+Checking whether we have copy_file_range system call                  : ok 
+Checking for getxattr                                                 : ok 
+Checking whether xattr interface takes additional options             : not found 
+Checking for dlopen                                                   : ok 
+Checking for dlsym                                                    : ok 
+Checking for dlerror                                                  : ok 
+Checking for dlclose                                                  : ok 
+Checking for declaration of dlopen                                    : ok 
+Checking C prototype for dlopen                                       : not found 
+Checking for fdatasync                                                : ok 
+Checking for declaration of fdatasync                                 : ok 
+Checking for clock_gettime                                            : ok 
+Checking whether the clock_gettime clock ID CLOCK_MONOTONIC is available : ok 
+Checking whether the clock_gettime clock ID CLOCK_PROCESS_CPUTIME_ID is available : ok 
+Checking whether the clock_gettime clock ID CLOCK_REALTIME is available           : ok 
+Checking for struct timespec                                                      : ok 
+Checking for header arpa/nameser.h                                                : yes 
+Checking for header resolv.h                                                      : yes 
+Checking for res_search                                                           : ok 
+Checking for header libintl.h                                                     : no 
+Checking for library intl                                                         : no 
+Checking for declaration of dgettext                                              : not found 
+Checking for declaration of dgettext (as enum)                                    : not found 
+Checking for declaration of gettext                                               : not found 
+Checking for declaration of gettext (as enum)                                     : not found 
+Checking for declaration of bindtextdomain                                        : not found 
+Checking for declaration of bindtextdomain (as enum)                              : not found 
+Checking for declaration of textdomain                                            : not found 
+Checking for declaration of textdomain (as enum)                                  : not found 
+Checking for declaration of bind_textdomain_codeset                               : not found 
+Checking for declaration of bind_textdomain_codeset (as enum)                     : not found 
+Checking for bindtextdomain                                                       : not found 
+Checking for textdomain                                                           : not found 
+Checking for bind_textdomain_codeset                                              : not found 
+Checking for bindtextdomain                                                       : not found 
+Checking for textdomain                                                           : not found 
+Checking for bind_textdomain_codeset                                              : not found 
+Checking for dgettext                                                             : not found 
+Checking for gettext                                                              : not found 
+Checking for dgettext                                                             : not found 
+Checking for gettext                                                              : not found 
+Checking for library intl                                                         : no 
+Checking for dgettext                                                             : not found 
+Checking for gettext                                                              : not found 
+Checking for library intl                                                         : no 
+Checking for dgettext                                                             : not found 
+Checking for gettext                                                              : not found 
+Checking for bindtextdomain                                                       : not found 
+Checking for textdomain                                                           : not found 
+Checking for bind_textdomain_codeset                                              : not found 
+Checking for pthread_create                                                       : ok 
+Checking for pthread_attr_init                                                    : ok 
+Checking for pthread_mutexattr_setrobust                                          : not found 
+Checking for library pthread                                                      : no 
+Checking for pthread_mutexattr_setrobust                                          : not found 
+Checking for pthread_mutexattr_setrobust_np                                       : not found 
+Checking for library pthread                                                      : no 
+Checking for pthread_mutexattr_setrobust_np                                       : not found 
+Checking for declaration of PTHREAD_MUTEX_ROBUST                                  : not found 
+Checking for declaration of PTHREAD_MUTEX_ROBUST (as enum)                        : not found 
+Checking for declaration of PTHREAD_MUTEX_ROBUST_NP                               : not found 
+Checking for declaration of PTHREAD_MUTEX_ROBUST_NP (as enum)                     : not found 
+Checking for pthread_mutex_consistent                                             : not found 
+Checking for library pthread                                                      : no 
+Checking for pthread_mutex_consistent                                             : not found 
+Checking for pthread_mutex_consistent_np                                          : not found 
+Checking for library pthread                                                      : no 
+Checking for pthread_mutex_consistent_np                                          : not found 
+Checking for __thread local storage                                               : ok 
+Checking for crypt                                                                : not found 
+Checking for library crypt                                                        : no 
+Checking for crypt                                                                : not found 
+Checking for crypt_r                                                              : not found 
+Checking for library crypt                                                        : no 
+Checking for crypt_r                                                              : not found 
+Checking for crypt_rn                                                             : not found 
+Checking for library crypt                                                        : no 
+Checking for crypt_rn                                                             : not found 
+Checking for header readline.h                                                    : no 
+Checking for header readline/readline.h                                           : no 
+Checking for header readline/history.h                                            : no 
+Checking for variable rl_event_hook                                               : not found 
+Checking for variable program_invocation_short_name                               : not found 
+Checking for declaration of snprintf                                              : ok 
+Checking for declaration of vsnprintf                                             : ok 
+Checking for declaration of asprintf                                              : ok 
+Checking for declaration of vasprintf                                             : ok 
+Checking for declaration of errno                                                 : ok 
+Checking for declaration of EWOULDBLOCK                                           : ok 
+Checking for declaration of environ                                               : ok 
+Checking for declaration of getgrent_r                                            : not found 
+Checking for declaration of getgrent_r (as enum)                                  : not found 
+Checking for declaration of getpwent_r                                            : not found 
+Checking for declaration of getpwent_r (as enum)                                  : not found 
+Checking for declaration of pread                                                 : ok 
+Checking for declaration of pwrite                                                : ok 
+Checking for declaration of setenv                                                : ok 
+Checking for declaration of setresgid                                             : ok 
+Checking for declaration of setresuid                                             : ok 
+Checking for eventfd                                                              : ok 
+Checking for header poll.h                                                        : yes 
+Checking for poll                                                                 : ok 
+Checking for strptime                                                             : ok 
+Checking for declaration of strptime                                              : ok 
+Checking for working strptime                                                     : ok 
+Checking for declaration of gettimeofday                                          : ok 
+Checking C prototype for gettimeofday                                             : ok 
+Checking C prototype for gettimeofday                                             : not found 
+Checking for C99 vsnprintf                                                        : ok 
+Checking for HAVE_SHARED_MMAP                                                     : ok 
+Checking for HAVE_MREMAP                                                          : ok 
+Checking for HAVE_INCOHERENT_MMAP                                                 : ok 
+Checking for HAVE_IMMEDIATE_STRUCTURES                                            : ok 
+Checking for HAVE_MKDIR_MODE                                                      : ok 
+Checking for member st_rdev in struct stat                                        : ok 
+Checking for member st_rdev in struct stat                                        : ok 
+Checking for member ss_family in struct sockaddr_storage                          : ok 
+Checking for member __ss_family in struct sockaddr_storage                        : not found 
+Checking for member sa_len in struct sockaddr                                     : not found 
+Checking for member sin_len in struct sockaddr_in                                 : not found 
+Checking for member sin6_len in struct sockaddr_in6                               : not found 
+Checking for HAVE_UNIXSOCKET                                                      : ok 
+Checking for HAVE_SECURE_MKSTEMP                                                  : ok 
+Checking for HAVE_IFACE_GETIFADDRS                                                : not found 
+Checking for HAVE_IFACE_AIX                                                       : not found 
+Checking for HAVE_IFACE_IFCONF                                                    : not found 
+Checking for HAVE_IFACE_IFREQ                                                     : not found 
+Checking for declaration of getpwent_r                                            : not found 
+Checking for declaration of getpwent_r (as enum)                                  : not found 
+Checking for declaration of getgrent_r                                            : not found 
+Checking for declaration of getgrent_r (as enum)                                  : not found 
+Checking for declaration of getpwent_r                                            : not found 
+Checking for declaration of getpwent_r (as enum)                                  : not found 
+Checking for declaration of getgrent_r                                            : not found 
+Checking for declaration of getgrent_r (as enum)                                  : not found 
+Checking for strerror_r                                                           : ok 
+Checking for XSI (rather than GNU) prototype for strerror_r                       : not found 
+Checking for program 'xsltproc'                                                   : not found 
+Checking for header sys/auxv.h                                                    : yes 
+Checking for getauxval                                                            : ok 
+Checking if compiler accepts -fstack-protector-strong                             : yes 
+Checking if compiler accepts -fstack-clash-protection                             : yes 
+Checking linker accepts -Wl,-no-undefined                                         : yes 
+Checking linker accepts ['-undefined', 'dynamic_lookup']                          : yes 
+Checking for program 'python3'                                                    : /usr/bin/python3 
+Checking for program 'python'                                                     : /usr/bin/python3 
+Checking for program 'python3'                                                    : /usr/bin/python3 
+Checking for python version >= 3.6.0                                              : 3.14.4 
+python headers                                                                    : Check disabled due to --disable-python 
+'configure' finished successfully (14.803s)
+PYTHONHASHSEED=1 WAF_MAKE=1  `PATH=buildtools/bin:../../buildtools/bin:$PATH which waf` build
+Waf: Entering directory `/home/runner/work/Magk/Magk/deps/build/proot/talloc-2.4.2/bin/default'
+Checking project rules ...
+Project rules pass
+[1/2] Creating bin/default/lib/replace/replace.empty.c
+[2/2] Compiling talloc.pc.in
+[3/4] Compiling lib/replace/closefrom.c
+[4/4] Compiling lib/replace/replace.c
+[5/6] Compiling lib/replace/closefrom.c
+[6/6] Compiling lib/replace/replace.c
+[ 7/22] Compiling talloc.c
+[ 8/22] Compiling lib/replace/tests/strptime.c
+[ 9/22] Compiling lib/replace/tests/getifaddrs.c
+[10/22] Compiling lib/replace/tests/testsuite.c
+[11/22] Compiling lib/replace/tests/os2_delete.c
+[12/22] Compiling lib/replace/tests/main.c
+[13/22] Compiling testsuite.c
+[14/22] Compiling testsuite_main.c
+[15/22] Compiling test_magic_differs_helper.c
+[16/22] Compiling bin/default/lib/replace/replace.empty.c
+[17/22] Compiling talloc.c
+[18/22] Linking bin/default/libtalloc.so
+../../testsuite.c:1282:6: warning: 'talloc_autofree_context' is deprecated [-Wdeprecated-declarations]
+ 1282 |         p = talloc_autofree_context();
+      |             ^
+../../talloc.h:1084:46: note: 'talloc_autofree_context' has been explicitly marked deprecated here
+ 1084 | _PUBLIC_ void *talloc_autofree_context(void) _DEPRECATED_;
+      |                                              ^
+../../lib/replace/replace.h:469:38: note: expanded from macro '_DEPRECATED_'
+  469 | #define _DEPRECATED_ __attribute__ ((deprecated))
+      |                                      ^
+../../testsuite.c:1285:6: warning: 'talloc_autofree_context' is deprecated [-Wdeprecated-declarations]
+ 1285 |         p = talloc_autofree_context();
+      |             ^
+../../talloc.h:1084:46: note: 'talloc_autofree_context' has been explicitly marked deprecated here
+ 1084 | _PUBLIC_ void *talloc_autofree_context(void) _DEPRECATED_;
+      |                                              ^
+../../lib/replace/replace.h:469:38: note: expanded from macro '_DEPRECATED_'
+  469 | #define _DEPRECATED_ __attribute__ ((deprecated))
+      |                                      ^
+../../testsuite.c:1628:29: warning: 'talloc_set_memlimit' is deprecated [-Wdeprecated-declarations]
+ 1628 |         torture_assert("memlimit", talloc_set_memlimit(l1, 2048) == 0,
+      |                                    ^
+../../talloc.h:1951:68: note: 'talloc_set_memlimit' has been explicitly marked deprecated here
+ 1951 | _PUBLIC_ int talloc_set_memlimit(const void *ctx, size_t max_size) _DEPRECATED_;
+      |                                                                    ^
+../../lib/replace/replace.h:469:38: note: expanded from macro '_DEPRECATED_'
+  469 | #define _DEPRECATED_ __attribute__ ((deprecated))
+      |                                      ^
+../../testsuite.c:1688:29: warning: 'talloc_set_memlimit' is deprecated [-Wdeprecated-declarations]
+ 1688 |         torture_assert("memlimit", talloc_set_memlimit(l3, 1024) == 0,
+      |                                    ^
+../../talloc.h:1951:68: note: 'talloc_set_memlimit' has been explicitly marked deprecated here
+ 1951 | _PUBLIC_ int talloc_set_memlimit(const void *ctx, size_t max_size) _DEPRECATED_;
+      |                                                                    ^
+../../lib/replace/replace.h:469:38: note: expanded from macro '_DEPRECATED_'
+  469 | #define _DEPRECATED_ __attribute__ ((deprecated))
+      |                                      ^
+../../testsuite.c:1701:29: warning: 'talloc_set_memlimit' is deprecated [-Wdeprecated-declarations]
+ 1701 |         torture_assert("memlimit", talloc_set_memlimit(l4, 512) == 0,
+      |                                    ^
+../../talloc.h:1951:68: note: 'talloc_set_memlimit' has been explicitly marked deprecated here
+ 1951 | _PUBLIC_ int talloc_set_memlimit(const void *ctx, size_t max_size) _DEPRECATED_;
+      |                                                                    ^
+../../lib/replace/replace.h:469:38: note: expanded from macro '_DEPRECATED_'
+  469 | #define _DEPRECATED_ __attribute__ ((deprecated))
+      |                                      ^
+../../testsuite.c:1735:29: warning: 'talloc_set_memlimit' is deprecated [-Wdeprecated-declarations]
+ 1735 |         torture_assert("memlimit", talloc_set_memlimit(l4, 512) == 0,
+      |                                    ^
+../../talloc.h:1951:68: note: 'talloc_set_memlimit' has been explicitly marked deprecated here
+ 1951 | _PUBLIC_ int talloc_set_memlimit(const void *ctx, size_t max_size) _DEPRECATED_;
+      |                                                                    ^
+../../lib/replace/replace.h:469:38: note: expanded from macro '_DEPRECATED_'
+  469 | #define _DEPRECATED_ __attribute__ ((deprecated))
+      |                                      ^
+../../testsuite.c:1768:2: warning: 'talloc_set_memlimit' is deprecated [-Wdeprecated-declarations]
+ 1768 |         talloc_set_memlimit(pool, 10*1024);
+      |         ^
+../../talloc.h:1951:68: note: 'talloc_set_memlimit' has been explicitly marked deprecated here
+ 1951 | _PUBLIC_ int talloc_set_memlimit(const void *ctx, size_t max_size) _DEPRECATED_;
+      |                                                                    ^
+../../lib/replace/replace.h:469:38: note: expanded from macro '_DEPRECATED_'
+  469 | #define _DEPRECATED_ __attribute__ ((deprecated))
+      |                                      ^
+../../testsuite.c:1821:2: warning: 'talloc_set_memlimit' is deprecated [-Wdeprecated-declarations]
+ 1821 |         talloc_set_memlimit(pool, 11*1024);
+      |         ^
+../../talloc.h:1951:68: note: 'talloc_set_memlimit' has been explicitly marked deprecated here
+ 1951 | _PUBLIC_ int talloc_set_memlimit(const void *ctx, size_t max_size) _DEPRECATED_;
+      |                                                                    ^
+../../lib/replace/replace.h:469:38: note: expanded from macro '_DEPRECATED_'
+  469 | #define _DEPRECATED_ __attribute__ ((deprecated))
+      |                                      ^
+../../testsuite.c:1833:2: warning: 'talloc_set_memlimit' is deprecated [-Wdeprecated-declarations]
+ 1833 |         talloc_set_memlimit(pool, 21*1024);
+      |         ^
+../../talloc.h:1951:68: note: 'talloc_set_memlimit' has been explicitly marked deprecated here
+ 1951 | _PUBLIC_ int talloc_set_memlimit(const void *ctx, size_t max_size) _DEPRECATED_;
+      |                                                                    ^
+../../lib/replace/replace.h:469:38: note: expanded from macro '_DEPRECATED_'
+  469 | #define _DEPRECATED_ __attribute__ ((deprecated))
+      |                                      ^
+../../testsuite.c:1871:2: warning: 'talloc_set_memlimit' is deprecated [-Wdeprecated-declarations]
+ 1871 |         talloc_set_memlimit(pool, 1024);
+      |         ^
+../../talloc.h:1951:68: note: 'talloc_set_memlimit' has been explicitly marked deprecated here
+ 1951 | _PUBLIC_ int talloc_set_memlimit(const void *ctx, size_t max_size) _DEPRECATED_;
+      |                                                                    ^
+../../lib/replace/replace.h:469:38: note: expanded from macro '_DEPRECATED_'
+  469 | #define _DEPRECATED_ __attribute__ ((deprecated))
+      |                                      ^
+../../testsuite.c:1892:2: warning: 'talloc_set_memlimit' is deprecated [-Wdeprecated-declarations]
+ 1892 |         talloc_set_memlimit(pool, 10*1024);
+      |         ^
+../../talloc.h:1951:68: note: 'talloc_set_memlimit' has been explicitly marked deprecated here
+ 1951 | _PUBLIC_ int talloc_set_memlimit(const void *ctx, size_t max_size) _DEPRECATED_;
+      |                                                                    ^
+../../lib/replace/replace.h:469:38: note: expanded from macro '_DEPRECATED_'
+  469 | #define _DEPRECATED_ __attribute__ ((deprecated))
+      |                                      ^
+11 warnings generated.
+
+[19/22] Linking bin/default/talloc_testsuite
+[20/22] Linking bin/default/talloc_test_magic_differs_helper
+[21/22] Linking bin/default/lib/replace/replace_testsuite
+[22/22] Symlinking bin/default/libtalloc.so
+Waf: Leaving directory `/home/runner/work/Magk/Magk/deps/build/proot/talloc-2.4.2/bin/default'
+Build commands will be stored in bin/default/compile_commands.json
+'build' finished successfully (0.527s)
+Cloning into 'proot'...
+Note: switching to '52d65a4dc140ca554d241a1438ddd4f6b00c9813'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+fake_netlink applied to /home/runner/work/Magk/Magk/deps/build/proot/proot
+if [ -e .check_process_vm ]; then echo "#define HAVE_PROCESS_VM" > .check_process_vm.res; else echo "" > .check_process_vm.res; fi
+if [ -e .check_seccomp_filter ]; then echo "#define HAVE_SECCOMP_FILTER" > .check_seccomp_filter.res; else echo "" > .check_seccomp_filter.res; fi
+echo "/* This file is auto-generated, edit at your own risk.  */" > build.h
+echo "#ifndef BUILD_H"      >> build.h
+echo "#define BUILD_H"      >> build.h
+sh -c 'VERSION=$(git describe --tags --dirty --abbrev=8 --always 2>/dev/null); if [ ! -z "${VERSION}" ]; then printf "#undef VERSION\n#define VERSION \"${VERSION}\"\n"; fi;'    >> build.h
+cat .check_process_vm.res .check_seccomp_filter.res                      >> build.h
+echo "#endif /* BUILD_H */" >> build.h
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./cli/cli.c -o cli/cli.o
+./cli/cli.c:582:14: warning: unused variable 'pointers' [-Wunused-variable]
+  582 |         void *const pointers[] = { this_function, call_site };
+      |                     ^~~~~~~~
+1 warning generated.
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./cli/proot.c -o cli/proot.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./cli/note.c -o cli/note.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./execve/enter.c -o execve/enter.o
+./execve/enter.c:539:30: warning: 'talloc_autofree_context' is deprecated [-Wdeprecated-declarations]
+  539 |         loader_path = talloc_strdup(talloc_autofree_context(), path);
+      |                                     ^
+/home/runner/work/Magk/Magk/deps/build/proot/prefix/include/talloc.h:1084:46: note: 'talloc_autofree_context' has been explicitly marked deprecated here
+ 1084 | _PUBLIC_ void *talloc_autofree_context(void) _DEPRECATED_;
+      |                                              ^
+/home/runner/work/Magk/Magk/deps/build/proot/prefix/include/talloc.h:119:38: note: expanded from macro '_DEPRECATED_'
+  119 | #define _DEPRECATED_ __attribute__ ((deprecated))
+      |                                      ^
+1 warning generated.
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./execve/exit.c -o execve/exit.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./execve/shebang.c -o execve/shebang.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./execve/elf.c -o execve/elf.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./execve/ldso.c -o execve/ldso.o
+./execve/ldso.c:108:8: warning: variable 'is_known' set but not used [-Wunused-but-set-variable]
+  108 |                 bool is_known = false;
+      |                      ^
+1 warning generated.
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./execve/auxv.c -o execve/auxv.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./execve/aoxp.c -o execve/aoxp.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./path/binding.c -o path/binding.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./path/glue.c -o path/glue.o
+./path/glue.c:76:14: warning: 'talloc_autofree_context' is deprecated [-Wdeprecated-declarations]
+   76 |         autofreed = talloc_autofree_context();
+      |                     ^
+/home/runner/work/Magk/Magk/deps/build/proot/prefix/include/talloc.h:1084:46: note: 'talloc_autofree_context' has been explicitly marked deprecated here
+ 1084 | _PUBLIC_ void *talloc_autofree_context(void) _DEPRECATED_;
+      |                                              ^
+/home/runner/work/Magk/Magk/deps/build/proot/prefix/include/talloc.h:119:38: note: expanded from macro '_DEPRECATED_'
+  119 | #define _DEPRECATED_ __attribute__ ((deprecated))
+      |                                      ^
+1 warning generated.
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./path/canon.c -o path/canon.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./path/f2fs-bug.c -o path/f2fs-bug.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./path/path.c -o path/path.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./path/proc.c -o path/proc.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./path/temp.c -o path/temp.o
+./path/temp.c:37:33: warning: 'talloc_autofree_context' is deprecated [-Wdeprecated-declarations]
+   37 |         temp_directory = talloc_strdup(talloc_autofree_context(), tmp);
+      |                                        ^
+/home/runner/work/Magk/Magk/deps/build/proot/prefix/include/talloc.h:1084:46: note: 'talloc_autofree_context' has been explicitly marked deprecated here
+ 1084 | _PUBLIC_ void *talloc_autofree_context(void) _DEPRECATED_;
+      |                                              ^
+/home/runner/work/Magk/Magk/deps/build/proot/prefix/include/talloc.h:119:38: note: expanded from macro '_DEPRECATED_'
+  119 | #define _DEPRECATED_ __attribute__ ((deprecated))
+      |                                      ^
+./path/temp.c:273:13: warning: 'talloc_autofree_context' is deprecated [-Wdeprecated-declarations]
+  273 |                 context = talloc_autofree_context();
+      |                           ^
+/home/runner/work/Magk/Magk/deps/build/proot/prefix/include/talloc.h:1084:46: note: 'talloc_autofree_context' has been explicitly marked deprecated here
+ 1084 | _PUBLIC_ void *talloc_autofree_context(void) _DEPRECATED_;
+      |                                              ^
+/home/runner/work/Magk/Magk/deps/build/proot/prefix/include/talloc.h:119:38: note: expanded from macro '_DEPRECATED_'
+  119 | #define _DEPRECATED_ __attribute__ ((deprecated))
+      |                                      ^
+2 warnings generated.
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./syscall/seccomp.c -o syscall/seccomp.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./syscall/syscall.c -o syscall/syscall.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./syscall/chain.c -o syscall/chain.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./syscall/enter.c -o syscall/enter.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./syscall/exit.c -o syscall/exit.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./syscall/sysnum.c -o syscall/sysnum.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./syscall/socket.c -o syscall/socket.o
+./syscall/socket.c:183:10: warning: 'mktemp' is deprecated: mktemp is unsafe, use mkstemp or tmpfile instead [-Wdeprecated-declarations]
+  183 |                 (void) mktemp(shorter_host_path);
+      |                        ^
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/stdlib.h:60:66: note: 'mktemp' has been explicitly marked deprecated here
+   60 | char* _Nullable mktemp(char* _Nonnull __template) __attribute__((__deprecated__("mktemp is unsafe, use mkstemp or tmpfile instead")));
+      |                                                                  ^
+1 warning generated.
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./syscall/heap.c -o syscall/heap.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./syscall/rlimit.c -o syscall/rlimit.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./syscall/pipe_shadow.c -o syscall/pipe_shadow.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./tracee/tracee.c -o tracee/tracee.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./tracee/mem.c -o tracee/mem.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./tracee/reg.c -o tracee/reg.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./tracee/event.c -o tracee/event.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./tracee/seccomp.c -o tracee/seccomp.o
+./tracee/seccomp.c:326:7: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  326 |                 int status;
+      |                     ^
+./tracee/seccomp.c:638:29: warning: comparison of integers of different signs: 'gid_t' (aka 'unsigned int') and 'int' [-Wsign-compare]
+  638 |                 if (rxid != rxid_ && rxid != -1)
+      |                                      ~~~~ ^  ~~
+./tracee/seccomp.c:640:29: warning: comparison of integers of different signs: 'gid_t' (aka 'unsigned int') and 'int' [-Wsign-compare]
+  640 |                 if (exid != exid_ && exid != -1)
+      |                                      ~~~~ ^  ~~
+./tracee/seccomp.c:642:29: warning: comparison of integers of different signs: 'gid_t' (aka 'unsigned int') and 'int' [-Wsign-compare]
+  642 |                 if (sxid != sxid_ && sxid != -1)
+      |                                      ~~~~ ^  ~~
+./tracee/seccomp.c:631:12: warning: variable 'ret' is used uninitialized whenever 'if' condition is false [-Wsometimes-uninitialized]
+  631 |                 else if (sysnum == PR_setresgid)
+      |                          ^~~~~~~~~~~~~~~~~~~~~~
+./tracee/seccomp.c:633:7: note: uninitialized use occurs here
+  633 |                 if (ret) {  // EFAULT = address outside address space
+      |                     ^~~
+./tracee/seccomp.c:631:8: note: remove the 'if' if its condition is always true
+  631 |                 else if (sysnum == PR_setresgid)
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+  632 |                         ret = getresgid(&rxid_, &exid_, &sxid_);
+./tracee/seccomp.c:150:9: note: initialize the variable 'ret' to silence this warning
+  150 |         int ret;
+      |                ^
+      |                 = 0
+5 warnings generated.
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./tracee/statx.c -o tracee/statx.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./ptrace/ptrace.c -o ptrace/ptrace.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./ptrace/user.c -o ptrace/user.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./ptrace/wait.c -o ptrace/wait.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./extension/extension.c -o extension/extension.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./extension/ashmem_memfd/ashmem_memfd.c -o extension/ashmem_memfd/ashmem_memfd.o
+./extension/ashmem_memfd/ashmem_memfd.c:173:96: warning: unused parameter 'data2' [-Wunused-parameter]
+  173 | int ashmem_memfd_callback(Extension *extension, ExtensionEvent event, intptr_t data1, intptr_t data2)
+      |                                                                                                ^
+1 warning generated.
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./extension/kompat/kompat.c -o extension/kompat/kompat.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./extension/fake_id0/chown.c -o extension/fake_id0/chown.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./extension/fake_id0/chroot.c -o extension/fake_id0/chroot.o
+./extension/fake_id0/chroot.c:54:2: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+   54 |         realpath(path, path_host_absolute);
+      |         ^~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./extension/fake_id0/getsockopt.c -o extension/fake_id0/getsockopt.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./extension/fake_id0/sendmsg.c -o extension/fake_id0/sendmsg.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./extension/fake_id0/socket.c -o extension/fake_id0/socket.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./extension/fake_id0/open.c -o extension/fake_id0/open.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./extension/fake_id0/unlink.c -o extension/fake_id0/unlink.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./extension/fake_id0/rename.c -o extension/fake_id0/rename.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./extension/fake_id0/chmod.c -o extension/fake_id0/chmod.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./extension/fake_id0/utimensat.c -o extension/fake_id0/utimensat.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./extension/fake_id0/access.c -o extension/fake_id0/access.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./extension/fake_id0/exec.c -o extension/fake_id0/exec.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./extension/fake_id0/link.c -o extension/fake_id0/link.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./extension/fake_id0/symlink.c -o extension/fake_id0/symlink.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./extension/fake_id0/mk.c -o extension/fake_id0/mk.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./extension/fake_id0/stat.c -o extension/fake_id0/stat.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./extension/fake_id0/helper_functions.c -o extension/fake_id0/helper_functions.o
+./extension/fake_id0/helper_functions.c:209:3: warning: misleading indentation; statement is not part of the previous 'else' [-Wmisleading-indentation]
+  209 |                 emulated_gid = config->egid;
+      |                 ^
+./extension/fake_id0/helper_functions.c:207:2: note: previous statement is here
+  207 |         else
+      |         ^
+1 warning generated.
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./extension/fake_id0/fake_id0.c -o extension/fake_id0/fake_id0.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./extension/hidden_files/hidden_files.c -o extension/hidden_files/hidden_files.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./extension/mountinfo/mountinfo.c -o extension/mountinfo/mountinfo.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./extension/port_switch/port_switch.c -o extension/port_switch/port_switch.o
+./extension/port_switch/port_switch.c:174:100: warning: sizeof on array function parameter will return size of 'long *' instead of 'long[]' [-Wsizeof-array-argument]
+  174 |                     write_data(tracee, peek_reg(tracee, CURRENT, SYSARG_2), socketcall_arg2, sizeof(socketcall_arg2));
+      |                                                                                                    ^
+./extension/port_switch/port_switch.c:145:121: note: declared here
+  145 | void mod_port(Tracee *tracee, bool is_socketcall, bool is_bind, bool is_udp, struct sockaddr_storage *my_sockaddr, long socketcall_arg2[]) {   
+      |                                                                                                                         ^
+./extension/port_switch/port_switch.c:182:100: warning: sizeof on array function parameter will return size of 'long *' instead of 'long[]' [-Wsizeof-array-argument]
+  182 |                     write_data(tracee, peek_reg(tracee, CURRENT, SYSARG_2), socketcall_arg2, sizeof(socketcall_arg2));
+      |                                                                                                    ^
+./extension/port_switch/port_switch.c:145:121: note: declared here
+  145 | void mod_port(Tracee *tracee, bool is_socketcall, bool is_bind, bool is_udp, struct sockaddr_storage *my_sockaddr, long socketcall_arg2[]) {   
+      |                                                                                                                         ^
+./extension/port_switch/port_switch.c:204:100: warning: sizeof on array function parameter will return size of 'long *' instead of 'long[]' [-Wsizeof-array-argument]
+  204 |                     write_data(tracee, peek_reg(tracee, CURRENT, SYSARG_2), socketcall_arg2, sizeof(socketcall_arg2));
+      |                                                                                                    ^
+./extension/port_switch/port_switch.c:145:121: note: declared here
+  145 | void mod_port(Tracee *tracee, bool is_socketcall, bool is_bind, bool is_udp, struct sockaddr_storage *my_sockaddr, long socketcall_arg2[]) {   
+      |                                                                                                                         ^
+./extension/port_switch/port_switch.c:212:100: warning: sizeof on array function parameter will return size of 'long *' instead of 'long[]' [-Wsizeof-array-argument]
+  212 |                     write_data(tracee, peek_reg(tracee, CURRENT, SYSARG_2), socketcall_arg2, sizeof(socketcall_arg2));
+      |                                                                                                    ^
+./extension/port_switch/port_switch.c:145:121: note: declared here
+  145 | void mod_port(Tracee *tracee, bool is_socketcall, bool is_bind, bool is_udp, struct sockaddr_storage *my_sockaddr, long socketcall_arg2[]) {   
+      |                                                                                                                         ^
+4 warnings generated.
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./extension/fake_netlink/fake_netlink.c -o extension/fake_netlink/fake_netlink.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./extension/sysvipc/sysvipc.c -o extension/sysvipc/sysvipc.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./extension/sysvipc/sysvipc_msg.c -o extension/sysvipc/sysvipc_msg.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./extension/sysvipc/sysvipc_sem.c -o extension/sysvipc/sysvipc_sem.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./extension/sysvipc/sysvipc_shm.c -o extension/sysvipc/sysvipc_shm.o
+./extension/sysvipc/sysvipc_shm.c:828:10: warning: 'mktemp' is deprecated: mktemp is unsafe, use mkstemp or tmpfile instead [-Wdeprecated-declarations]
+  828 |                 (void) mktemp(path);
+      |                        ^
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/stdlib.h:60:66: note: 'mktemp' has been explicitly marked deprecated here
+   60 | char* _Nullable mktemp(char* _Nonnull __template) __attribute__((__deprecated__("mktemp is unsafe, use mkstemp or tmpfile instead")));
+      |                                                                  ^
+1 warning generated.
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./extension/link2symlink/link2symlink.c -o extension/link2symlink/link2symlink.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./extension/fix_symlink_size/fix_symlink_size.c -o extension/fix_symlink_size/fix_symlink_size.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./loader/loader.c -o loader/loader.o  -fPIC -ffreestanding 
+./loader/loader.c:253:5: warning: inline asm clobber list contains reserved registers: SP [-Winline-asm]
+  253 |                                 BRANCH(stmt->start.stack_pointer, stmt->start.entry_point);
+      |                                 ^
+./loader/assembly-arm64.h:32:3: note: expanded from macro 'BRANCH'
+   32 |                 "// Restore initial stack pointer.      \n\t"   \
+      |                 ^
+./loader/loader.c:253:5: note: Reserved registers on the clobber list may not be preserved across the asm statement, and clobbering them may lead to undefined behaviour.
+./loader/assembly-arm64.h:32:3: note: expanded from macro 'BRANCH'
+   32 |                 "// Restore initial stack pointer.      \n\t"   \
+      |                 ^
+1 warning generated.
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./loader/assembly.S -o loader/assembly.o  -fPIC -ffreestanding 
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang  -o loader/loader loader/loader.o loader/assembly.o -static -nostdlib -Wl,--build-id=none,-Ttext=0x5400000000,--rosegment,-z,noexecstack
+cp loader/loader loader.exe
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-strip loader.exe
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-objcopy --input-target=binary --output-target=`env LANG=C /opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-objdump -f cli/cli.o | grep 'file format' | awk '{print $4}'` --binary-architecture `env LANG=C /opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-objdump -f cli/cli.o | grep architecture | cut -f 1 -d , | awk '{print $2}'` loader.exe loader/loader-wrapped.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./loader/loader.c -o loader/loader-m32.o -m32 -fPIC -ffreestanding 
+./loader/loader.c:253:5: warning: inline asm clobber list contains reserved registers: SP, PC [-Winline-asm]
+  253 |                                 BRANCH(stmt->start.stack_pointer, stmt->start.entry_point);
+      |                                 ^
+./loader/assembly-arm.h:32:3: note: expanded from macro 'BRANCH'
+   32 |                 "// Restore initial stack pointer.      \n\t"   \
+      |                 ^
+./loader/loader.c:253:5: note: Reserved registers on the clobber list may not be preserved across the asm statement, and clobbering them may lead to undefined behaviour.
+./loader/assembly-arm.h:32:3: note: expanded from macro 'BRANCH'
+   32 |                 "// Restore initial stack pointer.      \n\t"   \
+      |                 ^
+1 warning generated.
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./loader/assembly.S -o loader/assembly-m32.o -m32 -fPIC -ffreestanding 
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -m32 -o loader/loader-m32 loader/loader-m32.o loader/assembly-m32.o -static -nostdlib -Wl,--build-id=none,-Ttext=0x20000000,--rosegment,-z,noexecstack
+cp loader/loader-m32 loader-m32.exe
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-strip loader-m32.exe
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-objcopy --input-target=binary --output-target=`env LANG=C /opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-objdump -f cli/cli.o | grep 'file format' | awk '{print $4}'` --binary-architecture `env LANG=C /opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-objdump -f cli/cli.o | grep architecture | cut -f 1 -d , | awk '{print $2}'` loader-m32.exe loader/loader-m32-wrapped.o
+readelf -s loader/loader | awk -f loader/loader-info.awk > loader/loader-info.c
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -I/home/runner/work/Magk/Magk/deps/build/proot/prefix/include -DARG_MAX=131072 -DVERSION=\"5.1.107.102\" -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I. -I./ -fPIC -O2 -Wno-error -Wno-implicit-function-declaration -Wall -Wextra -O2 -MD -c ./loader/loader-info.c -o loader/loader-info.o
+/opt/hostedtoolcache/ndk/r27c/x64/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android26-clang -o proot cli/cli.o cli/proot.o cli/note.o execve/enter.o execve/exit.o execve/shebang.o execve/elf.o execve/ldso.o execve/auxv.o execve/aoxp.o path/binding.o path/glue.o path/canon.o path/f2fs-bug.o path/path.o path/proc.o path/temp.o syscall/seccomp.o syscall/syscall.o syscall/chain.o syscall/enter.o syscall/exit.o syscall/sysnum.o syscall/socket.o syscall/heap.o syscall/rlimit.o syscall/pipe_shadow.o tracee/tracee.o tracee/mem.o tracee/reg.o tracee/event.o tracee/seccomp.o tracee/statx.o ptrace/ptrace.o ptrace/user.o ptrace/wait.o extension/extension.o extension/ashmem_memfd/ashmem_memfd.o extension/kompat/kompat.o extension/fake_id0/chown.o extension/fake_id0/chroot.o extension/fake_id0/getsockopt.o extension/fake_id0/sendmsg.o extension/fake_id0/socket.o extension/fake_id0/open.o extension/fake_id0/unlink.o extension/fake_id0/rename.o extension/fake_id0/chmod.o extension/fake_id0/utimensat.o extension/fake_id0/access.o extension/fake_id0/exec.o extension/fake_id0/link.o extension/fake_id0/symlink.o extension/fake_id0/mk.o extension/fake_id0/stat.o extension/fake_id0/helper_functions.o extension/fake_id0/fake_id0.o extension/hidden_files/hidden_files.o extension/mountinfo/mountinfo.o extension/port_switch/port_switch.o extension/fake_netlink/fake_netlink.o extension/sysvipc/sysvipc.o extension/sysvipc/sysvipc_msg.o extension/sysvipc/sysvipc_sem.o extension/sysvipc/sysvipc_shm.o extension/link2symlink/link2symlink.o extension/fix_symlink_size/fix_symlink_size.o loader/loader-wrapped.o loader/loader-m32-wrapped.o loader/loader-info.o -L/home/runner/work/Magk/Magk/deps/build/proot/prefix/lib -ltalloc -Wl,-z,noexecstack
+rm loader.exe loader-m32.exe .check_seccomp_filter.o .check_process_vm.o .check_seccomp_filter .check_process_vm
+installed /home/runner/work/Magk/Magk/android/app/src/main/jniLibs/arm64-v8a/libproot.so
+installed /home/runner/work/Magk/Magk/android/app/src/main/jniLibs/arm64-v8a/libmagk_offload.so
+Downloading https://services.gradle.org/distributions/gradle-8.11.1-bin.zip
+.............10%.............20%.............30%.............40%.............50%.............60%.............70%.............80%.............90%.............100%
+
+Welcome to Gradle 8.11.1!
+
+Here are the highlights of this release:
+ - Parallel load and store for Configuration Cache
+ - Java compilation errors at the end of the build output
+ - Consolidated report for warnings and deprecations
+
+For more details see https://docs.gradle.org/8.11.1/release-notes.html
+
+Starting a Gradle Daemon (subsequent builds will be faster)
+
+> Configure project :app
+e: file:///home/runner/work/Magk/Magk/android/app/build.gradle.kts:170:9: Using 'jvmTarget: String' is an error. Please migrate to the compilerOptions DSL. More details are here: https://kotl.in/u1r8ln
+w: ⚠️ Deprecated Gradle Version
+The used Gradle version (Gradle 8.11.1) is deprecated and will not be supported in future Kotlin Gradle Plugin releases.
+The minimum supported Gradle version will become Gradle 8.14.4 in Kotlin 2.5.0.
+
+This warning can be suppressed in 'gradle.properties':
+    kotlin.suppressGradlePluginWarnings=DeprecatedGradleVersionWarning
+Solution: Please update the Gradle version to at least Gradle 8.14.4.
+
+[Incubating] Problems report is available at: file:///home/runner/work/Magk/Magk/android/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file '/home/runner/work/Magk/Magk/android/app/build.gradle.kts' line: 170
+
+* What went wrong:
+Script compilation error:
+
+  Line 170:         jvmTarget = "17"
+                    ^ Using 'jvmTarget: String' is an error. Please migrate to the compilerOptions DSL. More details are here: https://kotl.in/u1r8ln
+
+1 error
+
+* Try:
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+* Exception is:
+ScriptCompilationException(scriptCompilationErrors=[ScriptCompilationError(message=Using 'jvmTarget: String' is an error. Please migrate to the compilerOptions DSL. More details are here: https://kotl.in/u1r8ln, location=/home/runner/.gradle/.tmp/gradle-kotlin-dsl-7172205015984844446.tmp/build.gradle.kts (170:9))])
+	at org.gradle.kotlin.dsl.support.KotlinCompilerKt.compileKotlinScriptModuleTo(KotlinCompiler.kt:190)
+	at org.gradle.kotlin.dsl.support.KotlinCompilerKt.compileKotlinScriptToDirectory(KotlinCompiler.kt:148)
+	at org.gradle.kotlin.dsl.execution.ResidualProgramCompiler$compileScript$1.invoke(ResidualProgramCompiler.kt:713)
+	at org.gradle.kotlin.dsl.execution.ResidualProgramCompiler$compileScript$1.invoke(ResidualProgramCompiler.kt:712)
+	at org.gradle.kotlin.dsl.provider.StandardKotlinScriptEvaluator$InterpreterHost$runCompileBuildOperation$1.call(KotlinScriptEvaluator.kt:206)
+	at org.gradle.kotlin.dsl.provider.StandardKotlinScriptEvaluator$InterpreterHost$runCompileBuildOperation$1.call(KotlinScriptEvaluator.kt:203)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:209)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:166)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.kotlin.dsl.provider.StandardKotlinScriptEvaluator$InterpreterHost.runCompileBuildOperation(KotlinScriptEvaluator.kt:203)
+	at org.gradle.kotlin.dsl.execution.Interpreter$ProgramHost$compileSecondStageOf$cacheDir$1$1$1$1$1.invoke(Interpreter.kt:492)
+	at org.gradle.kotlin.dsl.execution.Interpreter$ProgramHost$compileSecondStageOf$cacheDir$1$1$1$1$1.invoke(Interpreter.kt:492)
+	at org.gradle.kotlin.dsl.execution.ResidualProgramCompiler.compileScript-C5AE47M(ResidualProgramCompiler.kt:712)
+	at org.gradle.kotlin.dsl.execution.ResidualProgramCompiler.compileScript-C5AE47M$default(ResidualProgramCompiler.kt:705)
+	at org.gradle.kotlin.dsl.execution.ResidualProgramCompiler.emitStage2ProgramFor(ResidualProgramCompiler.kt:364)
+	at org.gradle.kotlin.dsl.execution.Interpreter$ProgramHost$compileSecondStageOf$cacheDir$1.invoke(Interpreter.kt:493)
+	at org.gradle.kotlin.dsl.execution.Interpreter$ProgramHost$compileSecondStageOf$cacheDir$1.invoke(Interpreter.kt:469)
+	at org.gradle.kotlin.dsl.provider.StandardKotlinScriptEvaluator$KotlinScriptCompilationAndInstrumentation.compile(KotlinScriptEvaluator.kt:437)
+	at org.gradle.internal.scripts.BuildScriptCompilationAndInstrumentation.execute(BuildScriptCompilationAndInstrumentation.java:136)
+	at org.gradle.internal.execution.steps.ExecuteStep.executeInternal(ExecuteStep.java:105)
+	at org.gradle.internal.execution.steps.ExecuteStep.access$000(ExecuteStep.java:44)
+	at org.gradle.internal.execution.steps.ExecuteStep$1.call(ExecuteStep.java:59)
+	at org.gradle.internal.execution.steps.ExecuteStep$1.call(ExecuteStep.java:56)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:209)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:166)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.internal.execution.steps.ExecuteStep.execute(ExecuteStep.java:56)
+	at org.gradle.internal.execution.steps.ExecuteStep.execute(ExecuteStep.java:44)
+	at org.gradle.internal.execution.steps.CancelExecutionStep.execute(CancelExecutionStep.java:42)
+	at org.gradle.internal.execution.steps.TimeoutStep.executeWithoutTimeout(TimeoutStep.java:75)
+	at org.gradle.internal.execution.steps.TimeoutStep.execute(TimeoutStep.java:55)
+	at org.gradle.internal.execution.steps.PreCreateOutputParentsStep.execute(PreCreateOutputParentsStep.java:50)
+	at org.gradle.internal.execution.steps.PreCreateOutputParentsStep.execute(PreCreateOutputParentsStep.java:28)
+	at org.gradle.internal.execution.steps.BroadcastChangingOutputsStep.execute(BroadcastChangingOutputsStep.java:61)
+	at org.gradle.internal.execution.steps.BroadcastChangingOutputsStep.execute(BroadcastChangingOutputsStep.java:26)
+	at org.gradle.internal.execution.steps.NoInputChangesStep.execute(NoInputChangesStep.java:30)
+	at org.gradle.internal.execution.steps.NoInputChangesStep.execute(NoInputChangesStep.java:21)
+	at org.gradle.internal.execution.steps.CaptureOutputsAfterExecutionStep.execute(CaptureOutputsAfterExecutionStep.java:69)
+	at org.gradle.internal.execution.steps.CaptureOutputsAfterExecutionStep.execute(CaptureOutputsAfterExecutionStep.java:46)
+	at org.gradle.internal.execution.steps.BuildCacheStep.executeWithoutCache(BuildCacheStep.java:189)
+	at org.gradle.internal.execution.steps.BuildCacheStep.lambda$execute$1(BuildCacheStep.java:75)
+	at org.gradle.internal.Either$Right.fold(Either.java:175)
+	at org.gradle.internal.execution.caching.CachingState.fold(CachingState.java:62)
+	at org.gradle.internal.execution.steps.BuildCacheStep.execute(BuildCacheStep.java:73)
+	at org.gradle.internal.execution.steps.BuildCacheStep.execute(BuildCacheStep.java:48)
+	at org.gradle.internal.execution.steps.NeverUpToDateStep.execute(NeverUpToDateStep.java:34)
+	at org.gradle.internal.execution.steps.NeverUpToDateStep.execute(NeverUpToDateStep.java:22)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsFinishedStep.execute(MarkSnapshottingInputsFinishedStep.java:37)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsFinishedStep.execute(MarkSnapshottingInputsFinishedStep.java:27)
+	at org.gradle.internal.execution.steps.ResolveNonIncrementalCachingStateStep.executeDelegate(ResolveNonIncrementalCachingStateStep.java:50)
+	at org.gradle.internal.execution.steps.AbstractResolveCachingStateStep.execute(AbstractResolveCachingStateStep.java:71)
+	at org.gradle.internal.execution.steps.AbstractResolveCachingStateStep.execute(AbstractResolveCachingStateStep.java:39)
+	at org.gradle.internal.execution.steps.ValidateStep.execute(ValidateStep.java:107)
+	at org.gradle.internal.execution.steps.ValidateStep.execute(ValidateStep.java:56)
+	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.execute(AbstractCaptureStateBeforeExecutionStep.java:64)
+	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.execute(AbstractCaptureStateBeforeExecutionStep.java:43)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsStartedStep.execute(MarkSnapshottingInputsStartedStep.java:38)
+	at org.gradle.internal.execution.steps.AssignImmutableWorkspaceStep.lambda$executeInTemporaryWorkspace$3(AssignImmutableWorkspaceStep.java:209)
+	at org.gradle.internal.execution.workspace.impl.CacheBasedImmutableWorkspaceProvider$1.withTemporaryWorkspace(CacheBasedImmutableWorkspaceProvider.java:116)
+	at org.gradle.internal.execution.steps.AssignImmutableWorkspaceStep.executeInTemporaryWorkspace(AssignImmutableWorkspaceStep.java:199)
+	at org.gradle.internal.execution.steps.AssignImmutableWorkspaceStep.lambda$execute$0(AssignImmutableWorkspaceStep.java:121)
+	at org.gradle.internal.execution.steps.AssignImmutableWorkspaceStep.execute(AssignImmutableWorkspaceStep.java:121)
+	at org.gradle.internal.execution.steps.AssignImmutableWorkspaceStep.execute(AssignImmutableWorkspaceStep.java:90)
+	at org.gradle.internal.execution.steps.ChoosePipelineStep.execute(ChoosePipelineStep.java:38)
+	at org.gradle.internal.execution.steps.ChoosePipelineStep.execute(ChoosePipelineStep.java:23)
+	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.lambda$execute$2(ExecuteWorkBuildOperationFiringStep.java:67)
+	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.execute(ExecuteWorkBuildOperationFiringStep.java:67)
+	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.execute(ExecuteWorkBuildOperationFiringStep.java:39)
+	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:46)
+	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:34)
+	at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:48)
+	at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:35)
+	at org.gradle.internal.execution.impl.DefaultExecutionEngine$1.execute(DefaultExecutionEngine.java:61)
+	at org.gradle.kotlin.dsl.provider.StandardKotlinScriptEvaluator$InterpreterHost.cachedDirFor(KotlinScriptEvaluator.kt:301)
+	at org.gradle.kotlin.dsl.execution.Interpreter$ProgramHost.compileSecondStageOf(Interpreter.kt:469)
+	at Program.loadSecondStageFor(Unknown Source)
+	at org.gradle.kotlin.dsl.execution.Interpreter$ProgramHost.evaluateSecondStageOf(Interpreter.kt:433)
+	at Program.execute(Unknown Source)
+	at org.gradle.kotlin.dsl.execution.Interpreter$ProgramHost.eval(Interpreter.kt:516)
+	at org.gradle.kotlin.dsl.execution.Interpreter.eval(Interpreter.kt:214)
+	at org.gradle.kotlin.dsl.provider.StandardKotlinScriptEvaluator.evaluate(KotlinScriptEvaluator.kt:130)
+	at org.gradle.kotlin.dsl.provider.KotlinScriptPluginFactory$create$1.invoke(KotlinScriptPluginFactory.kt:46)
+	at org.gradle.kotlin.dsl.provider.KotlinScriptPluginFactory$create$1.invoke(KotlinScriptPluginFactory.kt:43)
+	at org.gradle.kotlin.dsl.provider.KotlinScriptPlugin.apply(KotlinScriptPlugin.kt:35)
+	at org.gradle.configuration.BuildOperationScriptPlugin$1.run(BuildOperationScriptPlugin.java:68)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:29)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:26)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:166)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.run(DefaultBuildOperationRunner.java:47)
+	at org.gradle.configuration.BuildOperationScriptPlugin.lambda$apply$0(BuildOperationScriptPlugin.java:65)
+	at org.gradle.internal.code.DefaultUserCodeApplicationContext.apply(DefaultUserCodeApplicationContext.java:44)
+	at org.gradle.configuration.BuildOperationScriptPlugin.apply(BuildOperationScriptPlugin.java:65)
+	at org.gradle.api.internal.project.DefaultProjectStateRegistry$ProjectStateImpl.lambda$applyToMutableState$1(DefaultProjectStateRegistry.java:411)
+	at org.gradle.api.internal.project.DefaultProjectStateRegistry$ProjectStateImpl.fromMutableState(DefaultProjectStateRegistry.java:429)
+	at org.gradle.api.internal.project.DefaultProjectStateRegistry$ProjectStateImpl.applyToMutableState(DefaultProjectStateRegistry.java:410)
+	at org.gradle.configuration.project.BuildScriptProcessor.execute(BuildScriptProcessor.java:46)
+	at org.gradle.configuration.project.BuildScriptProcessor.execute(BuildScriptProcessor.java:27)
+	at org.gradle.configuration.project.ConfigureActionsProjectEvaluator.evaluate(ConfigureActionsProjectEvaluator.java:35)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator$EvaluateProject.lambda$run$0(LifecycleProjectEvaluator.java:109)
+	at org.gradle.api.internal.project.DefaultProjectStateRegistry$ProjectStateImpl.lambda$applyToMutableState$1(DefaultProjectStateRegistry.java:411)
+	at org.gradle.api.internal.project.DefaultProjectStateRegistry$ProjectStateImpl.lambda$fromMutableState$2(DefaultProjectStateRegistry.java:434)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withReplacedLocks(DefaultWorkerLeaseService.java:359)
+	at org.gradle.api.internal.project.DefaultProjectStateRegistry$ProjectStateImpl.fromMutableState(DefaultProjectStateRegistry.java:434)
+	at org.gradle.api.internal.project.DefaultProjectStateRegistry$ProjectStateImpl.applyToMutableState(DefaultProjectStateRegistry.java:410)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator$EvaluateProject.run(LifecycleProjectEvaluator.java:100)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:29)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:26)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:166)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.run(DefaultBuildOperationRunner.java:47)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.evaluate(LifecycleProjectEvaluator.java:72)
+	at org.gradle.api.internal.project.DefaultProject.evaluateUnchecked(DefaultProject.java:825)
+	at org.gradle.api.internal.project.ProjectLifecycleController.lambda$ensureSelfConfigured$2(ProjectLifecycleController.java:85)
+	at org.gradle.internal.model.StateTransitionController.lambda$doTransition$14(StateTransitionController.java:255)
+	at org.gradle.internal.model.StateTransitionController.doTransition(StateTransitionController.java:266)
+	at org.gradle.internal.model.StateTransitionController.doTransition(StateTransitionController.java:254)
+	at org.gradle.internal.model.StateTransitionController.lambda$maybeTransitionIfNotCurrentlyTransitioning$10(StateTransitionController.java:199)
+	at org.gradle.internal.work.DefaultSynchronizer.withLock(DefaultSynchronizer.java:36)
+	at org.gradle.internal.model.StateTransitionController.maybeTransitionIfNotCurrentlyTransitioning(StateTransitionController.java:195)
+	at org.gradle.api.internal.project.ProjectLifecycleController.ensureSelfConfigured(ProjectLifecycleController.java:85)
+	at org.gradle.api.internal.project.DefaultProjectStateRegistry$ProjectStateImpl.ensureConfigured(DefaultProjectStateRegistry.java:385)
+	at org.gradle.execution.TaskPathProjectEvaluator.configure(TaskPathProjectEvaluator.java:42)
+	at org.gradle.execution.TaskPathProjectEvaluator.configureHierarchy(TaskPathProjectEvaluator.java:58)
+	at org.gradle.configuration.DefaultProjectsPreparer.prepareProjects(DefaultProjectsPreparer.java:50)
+	at org.gradle.configuration.BuildTreePreparingProjectsPreparer.prepareProjects(BuildTreePreparingProjectsPreparer.java:65)
+	at org.gradle.configuration.BuildOperationFiringProjectsPreparer$ConfigureBuild.run(BuildOperationFiringProjectsPreparer.java:52)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:29)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:26)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:166)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.run(DefaultBuildOperationRunner.java:47)
+	at org.gradle.configuration.BuildOperationFiringProjectsPreparer.prepareProjects(BuildOperationFiringProjectsPreparer.java:40)
+	at org.gradle.initialization.VintageBuildModelController.lambda$prepareProjects$2(VintageBuildModelController.java:84)
+	at org.gradle.internal.model.StateTransitionController.lambda$doTransition$14(StateTransitionController.java:255)
+	at org.gradle.internal.model.StateTransitionController.doTransition(StateTransitionController.java:266)
+	at org.gradle.internal.model.StateTransitionController.doTransition(StateTransitionController.java:254)
+	at org.gradle.internal.model.StateTransitionController.lambda$transitionIfNotPreviously$11(StateTransitionController.java:213)
+	at org.gradle.internal.work.DefaultSynchronizer.withLock(DefaultSynchronizer.java:36)
+	at org.gradle.internal.model.StateTransitionController.transitionIfNotPreviously(StateTransitionController.java:209)
+	at org.gradle.initialization.VintageBuildModelController.prepareProjects(VintageBuildModelController.java:84)
+	at org.gradle.initialization.VintageBuildModelController.prepareToScheduleTasks(VintageBuildModelController.java:71)
+	at org.gradle.internal.build.DefaultBuildLifecycleController.lambda$prepareToScheduleTasks$6(DefaultBuildLifecycleController.java:175)
+	at org.gradle.internal.model.StateTransitionController.lambda$doTransition$14(StateTransitionController.java:255)
+	at org.gradle.internal.model.StateTransitionController.doTransition(StateTransitionController.java:266)
+	at org.gradle.internal.model.StateTransitionController.doTransition(StateTransitionController.java:254)
+	at org.gradle.internal.model.StateTransitionController.lambda$maybeTransition$9(StateTransitionController.java:190)
+	at org.gradle.internal.work.DefaultSynchronizer.withLock(DefaultSynchronizer.java:36)
+	at org.gradle.internal.model.StateTransitionController.maybeTransition(StateTransitionController.java:186)
+	at org.gradle.internal.build.DefaultBuildLifecycleController.prepareToScheduleTasks(DefaultBuildLifecycleController.java:173)
+	at org.gradle.internal.buildtree.DefaultBuildTreeWorkPreparer.scheduleRequestedTasks(DefaultBuildTreeWorkPreparer.java:36)
+	at org.gradle.internal.cc.impl.VintageBuildTreeWorkController$scheduleAndRunRequestedTasks$1.apply(VintageBuildTreeWorkController.kt:36)
+	at org.gradle.internal.cc.impl.VintageBuildTreeWorkController$scheduleAndRunRequestedTasks$1.apply(VintageBuildTreeWorkController.kt:35)
+	at org.gradle.composite.internal.DefaultIncludedBuildTaskGraph.withNewWorkGraph(DefaultIncludedBuildTaskGraph.java:112)
+	at org.gradle.internal.cc.impl.VintageBuildTreeWorkController.scheduleAndRunRequestedTasks(VintageBuildTreeWorkController.kt:35)
+	at org.gradle.internal.buildtree.DefaultBuildTreeLifecycleController.lambda$scheduleAndRunTasks$1(DefaultBuildTreeLifecycleController.java:77)
+	at org.gradle.internal.buildtree.DefaultBuildTreeLifecycleController.lambda$runBuild$4(DefaultBuildTreeLifecycleController.java:120)
+	at org.gradle.internal.model.StateTransitionController.lambda$transition$6(StateTransitionController.java:169)
+	at org.gradle.internal.model.StateTransitionController.doTransition(StateTransitionController.java:266)
+	at org.gradle.internal.model.StateTransitionController.lambda$transition$7(StateTransitionController.java:169)
+	at org.gradle.internal.work.DefaultSynchronizer.withLock(DefaultSynchronizer.java:46)
+	at org.gradle.internal.model.StateTransitionController.transition(StateTransitionController.java:169)
+	at org.gradle.internal.buildtree.DefaultBuildTreeLifecycleController.runBuild(DefaultBuildTreeLifecycleController.java:117)
+	at org.gradle.internal.buildtree.DefaultBuildTreeLifecycleController.scheduleAndRunTasks(DefaultBuildTreeLifecycleController.java:77)
+	at org.gradle.internal.buildtree.DefaultBuildTreeLifecycleController.scheduleAndRunTasks(DefaultBuildTreeLifecycleController.java:72)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:31)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.internal.buildtree.ProblemReportingBuildActionRunner.run(ProblemReportingBuildActionRunner.java:49)
+	at org.gradle.launcher.exec.BuildOutcomeReportingBuildActionRunner.run(BuildOutcomeReportingBuildActionRunner.java:66)
+	at org.gradle.tooling.internal.provider.FileSystemWatchingBuildActionRunner.run(FileSystemWatchingBuildActionRunner.java:140)
+	at org.gradle.launcher.exec.BuildCompletionNotifyingBuildActionRunner.run(BuildCompletionNotifyingBuildActionRunner.java:41)
+	at org.gradle.launcher.exec.RootBuildLifecycleBuildActionExecutor.lambda$execute$0(RootBuildLifecycleBuildActionExecutor.java:54)
+	at org.gradle.composite.internal.DefaultRootBuildState.run(DefaultRootBuildState.java:130)
+	at org.gradle.launcher.exec.RootBuildLifecycleBuildActionExecutor.execute(RootBuildLifecycleBuildActionExecutor.java:54)
+	at org.gradle.internal.buildtree.InitDeprecationLoggingActionExecutor.execute(InitDeprecationLoggingActionExecutor.java:62)
+	at org.gradle.internal.buildtree.InitProblems.execute(InitProblems.java:36)
+	at org.gradle.internal.buildtree.DefaultBuildTreeContext.execute(DefaultBuildTreeContext.java:40)
+	at org.gradle.launcher.exec.BuildTreeLifecycleBuildActionExecutor.lambda$execute$0(BuildTreeLifecycleBuildActionExecutor.java:71)
+	at org.gradle.internal.buildtree.BuildTreeState.run(BuildTreeState.java:60)
+	at org.gradle.launcher.exec.BuildTreeLifecycleBuildActionExecutor.execute(BuildTreeLifecycleBuildActionExecutor.java:71)
+	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionExecutor$3.call(RunAsBuildOperationBuildActionExecutor.java:61)
+	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionExecutor$3.call(RunAsBuildOperationBuildActionExecutor.java:57)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:209)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:166)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionExecutor.execute(RunAsBuildOperationBuildActionExecutor.java:57)
+	at org.gradle.launcher.exec.RunAsWorkerThreadBuildActionExecutor.lambda$execute$0(RunAsWorkerThreadBuildActionExecutor.java:36)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:263)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:127)
+	at org.gradle.launcher.exec.RunAsWorkerThreadBuildActionExecutor.execute(RunAsWorkerThreadBuildActionExecutor.java:36)
+	at org.gradle.tooling.internal.provider.continuous.ContinuousBuildActionExecutor.execute(ContinuousBuildActionExecutor.java:110)
+	at org.gradle.tooling.internal.provider.SubscribableBuildActionExecutor.execute(SubscribableBuildActionExecutor.java:64)
+	at org.gradle.internal.session.DefaultBuildSessionContext.execute(DefaultBuildSessionContext.java:46)
+	at org.gradle.internal.buildprocess.execution.BuildSessionLifecycleBuildActionExecutor$ActionImpl.apply(BuildSessionLifecycleBuildActionExecutor.java:92)
+	at org.gradle.internal.buildprocess.execution.BuildSessionLifecycleBuildActionExecutor$ActionImpl.apply(BuildSessionLifecycleBuildActionExecutor.java:80)
+	at org.gradle.internal.session.BuildSessionState.run(BuildSessionState.java:71)
+	at org.gradle.internal.buildprocess.execution.BuildSessionLifecycleBuildActionExecutor.execute(BuildSessionLifecycleBuildActionExecutor.java:62)
+	at org.gradle.internal.buildprocess.execution.BuildSessionLifecycleBuildActionExecutor.execute(BuildSessionLifecycleBuildActionExecutor.java:41)
+	at org.gradle.internal.buildprocess.execution.StartParamsValidatingActionExecutor.execute(StartParamsValidatingActionExecutor.java:64)
+	at org.gradle.internal.buildprocess.execution.StartParamsValidatingActionExecutor.execute(StartParamsValidatingActionExecutor.java:32)
+	at org.gradle.internal.buildprocess.execution.SessionFailureReportingActionExecutor.execute(SessionFailureReportingActionExecutor.java:51)
+	at org.gradle.internal.buildprocess.execution.SessionFailureReportingActionExecutor.execute(SessionFailureReportingActionExecutor.java:39)
+	at org.gradle.internal.buildprocess.execution.SetupLoggingActionExecutor.execute(SetupLoggingActionExecutor.java:47)
+	at org.gradle.internal.buildprocess.execution.SetupLoggingActionExecutor.execute(SetupLoggingActionExecutor.java:31)
+	at org.gradle.launcher.daemon.server.exec.ExecuteBuild.doBuild(ExecuteBuild.java:70)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:37)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+	at org.gradle.launcher.daemon.server.exec.WatchForDisconnection.execute(WatchForDisconnection.java:39)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+	at org.gradle.launcher.daemon.server.exec.ResetDeprecationLogger.execute(ResetDeprecationLogger.java:29)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+	at org.gradle.launcher.daemon.server.exec.RequestStopIfSingleUsedDaemon.execute(RequestStopIfSingleUsedDaemon.java:35)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput.lambda$execute$0(ForwardClientInput.java:40)
+	at org.gradle.internal.daemon.clientinput.ClientInputForwarder.forwardInput(ClientInputForwarder.java:80)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput.execute(ForwardClientInput.java:37)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+	at org.gradle.launcher.daemon.server.exec.LogAndCheckHealth.execute(LogAndCheckHealth.java:64)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+	at org.gradle.launcher.daemon.server.exec.LogToClient.doBuild(LogToClient.java:63)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:37)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+	at org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment.doBuild(EstablishBuildEnvironment.java:84)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:37)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+	at org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy$1.run(StartBuildOrRespondWithBusy.java:52)
+	at org.gradle.launcher.daemon.server.DaemonStateCoordinator.lambda$runCommand$0(DaemonStateCoordinator.java:321)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
+
+
+BUILD FAILED in 51s
